@@ -1,0 +1,3302 @@
+plaid_magenta =  {
+	"clear_lavender": 2,
+	"clear_teal": 3,
+	"vibrant_gold": 4
+}
+
+light_teal =  {
+	"drab_magenta": 4,
+	"dull_crimson": 2,
+	"posh_brown": 3
+}
+
+wavy_gray =  {
+	"dark_aqua": 3
+}
+
+faded_magenta =  {
+	"dark_crimson": 3,
+	"dark_violet": 3
+}
+
+shiny_aqua =  {
+	"plaid_turquoise": 1
+}
+
+muted_maroon =  {
+	"dim_cyan": 2
+}
+
+pale_yellow =  {
+	"dotted_black": 5,
+	"drab_silver": 2,
+	"shiny_gold": 3
+}
+
+dark_white =  {
+	"posh_salmon": 5,
+	"wavy_brown": 5,
+	"dark_fuchsia": 4
+}
+
+plaid_tomato =  {
+	"posh_brown": 1,
+	"muted_white": 3,
+	"vibrant_fuchsia": 4,
+	"drab_magenta": 2
+}
+
+wavy_green =  {
+	"pale_brown": 5,
+	"plaid_turquoise": 3,
+	"mirrored_maroon": 2
+}
+
+posh_tomato =  {
+	"mirrored_white": 5,
+	"shiny_lavender": 1
+}
+
+vibrant_silver =  {
+	"dotted_lavender": 4,
+	"wavy_green": 3,
+	"striped_yellow": 1,
+	"muted_plum": 4
+}
+
+mirrored_cyan =  {
+	"faded_plum": 1,
+	"dull_purple": 5
+}
+
+bright_yellow =  {
+	"clear_yellow": 1,
+	"muted_indigo": 3
+}
+
+shiny_plum =  {
+	"shiny_teal": 3,
+	"wavy_gray": 3
+}
+
+striped_gold =  {
+	"dull_plum": 1,
+	"dark_crimson": 2,
+	"bright_lime": 4,
+	"vibrant_teal": 2
+}
+
+faded_black =  {
+	"faded_bronze": 3
+}
+
+dim_white =  {
+	"striped_turquoise": 5,
+	"muted_yellow": 4,
+	"shiny_crimson": 4
+}
+
+light_bronze =  {
+	"bright_plum": 5
+}
+
+vibrant_maroon =  {
+	"dim_beige": 3,
+	"drab_blue": 4
+}
+
+vibrant_lime =  {
+	"pale_cyan": 2
+}
+
+striped_fuchsia =  {
+	"vibrant_bronze": 1,
+	"shiny_lavender": 3
+}
+
+mirrored_indigo =  {
+	"dim_gray": 4
+}
+
+posh_bronze =  {
+	"muted_coral": 5,
+	"pale_orange": 2
+}
+
+drab_coral =  {
+ no_other
+}
+
+mirrored_violet =  {
+	"dotted_purple": 2,
+	"posh_green": 2
+}
+
+dotted_lime =  {
+	"dull_fuchsia": 3,
+	"plaid_fuchsia": 4,
+	"pale_gray": 4,
+	"drab_fuchsia": 3
+}
+
+dull_gray =  {
+	"bright_brown": 4,
+	"dark_blue": 5,
+	"dull_cyan": 4,
+	"dark_violet": 1
+}
+
+posh_indigo =  {
+	"faded_teal": 1,
+	"dark_cyan": 3
+}
+
+shiny_orange =  {
+	"mirrored_green": 3,
+	"dim_tomato": 5
+}
+
+faded_lime =  {
+	"vibrant_olive": 5
+}
+
+dim_magenta =  {
+	"vibrant_green": 3,
+	"vibrant_olive": 1
+}
+
+light_salmon =  {
+	"dim_turquoise": 1,
+	"muted_tomato": 1,
+	"bright_black": 4,
+	"posh_yellow": 5
+}
+
+bright_bronze =  {
+	"pale_black": 4,
+	"mirrored_maroon": 2
+}
+
+striped_yellow =  {
+	"mirrored_red": 5,
+	"light_tan": 3,
+	"vibrant_teal": 4
+}
+
+dark_teal =  {
+	"posh_yellow": 5,
+	"dull_plum": 4,
+	"muted_plum": 3,
+	"mirrored_beige": 5
+}
+
+plaid_green =  {
+	"mirrored_yellow": 4,
+	"dark_aqua": 4,
+	"muted_gray": 2
+}
+
+bright_red =  {
+	"faded_olive": 2,
+	"drab_olive": 5,
+	"striped_lime": 1
+}
+
+light_plum =  {
+	"pale_coral": 2
+}
+
+muted_yellow =  {
+ no_other
+}
+
+wavy_yellow =  {
+	"posh_plum": 3,
+	"dotted_chartreuse": 2,
+	"dotted_magenta": 4
+}
+
+drab_brown =  {
+	"clear_blue": 2
+}
+
+posh_purple =  {
+	"light_coral": 4,
+	"dim_aqua": 1
+}
+
+faded_brown =  {
+	"faded_salmon": 2,
+	"striped_crimson": 5
+}
+
+dark_blue =  {
+	"pale_brown": 4,
+	"mirrored_gray": 1
+}
+
+mirrored_gold =  {
+	"wavy_gold": 2,
+	"muted_gray": 4,
+	"drab_olive": 5
+}
+
+muted_tomato =  {
+	"bright_violet": 1,
+	"pale_plum": 5,
+	"light_plum": 5
+}
+
+wavy_tomato =  {
+	"dim_beige": 4,
+	"faded_orange": 5
+}
+
+clear_aqua =  {
+	"dull_lime": 1,
+	"clear_violet": 1,
+	"dim_tan": 2,
+	"bright_gray": 3
+}
+
+clear_violet =  {
+	"posh_brown": 4,
+	"striped_fuchsia": 2
+}
+
+plaid_yellow =  {
+	"pale_fuchsia": 1,
+	"mirrored_purple": 1,
+	"faded_purple": 4
+}
+
+muted_lime =  {
+	"dotted_lavender": 3,
+	"faded_turquoise": 1,
+	"plaid_chartreuse": 1
+}
+
+bright_orange =  {
+	"shiny_aqua": 1,
+	"mirrored_salmon": 2,
+	"posh_red": 3
+}
+
+pale_cyan =  {
+	"dim_orange": 3,
+	"drab_lavender": 4,
+	"bright_coral": 2,
+	"light_white": 5
+}
+
+dark_magenta =  {
+	"dull_salmon": 5,
+	"drab_cyan": 1,
+	"dotted_maroon": 1,
+	"dim_tomato": 1
+}
+
+plaid_chartreuse =  {
+	"dotted_orange": 5,
+	"vibrant_maroon": 2,
+	"dotted_lavender": 1
+}
+
+dotted_tomato =  {
+	"muted_bronze": 2,
+	"dark_magenta": 1
+}
+
+muted_tan =  {
+	"plaid_tan": 2
+}
+
+posh_magenta =  {
+	"vibrant_red": 2,
+	"muted_gray": 4,
+	"vibrant_maroon": 2
+}
+
+bright_purple =  {
+	"bright_gray": 4,
+	"plaid_tomato": 2
+}
+
+drab_chartreuse =  {
+	"light_blue": 1,
+	"drab_gray": 3,
+	"dim_tan": 1,
+	"posh_crimson": 5
+}
+
+shiny_white =  {
+	"dull_beige": 5
+}
+
+bright_cyan =  {
+	"shiny_tomato": 4,
+	"muted_lavender": 1
+}
+
+faded_blue =  {
+	"vibrant_aqua": 3,
+	"muted_orange": 3
+}
+
+light_cyan =  {
+	"mirrored_magenta": 4,
+	"dotted_turquoise": 1
+}
+
+wavy_salmon =  {
+	"clear_tan": 3,
+	"dull_bronze": 1
+}
+
+pale_indigo =  {
+	"faded_blue": 2,
+	"pale_yellow": 2,
+	"dim_tomato": 5,
+	"dark_coral": 5
+}
+
+pale_olive =  {
+	"muted_olive": 5,
+	"dim_olive": 4,
+	"clear_violet": 5
+}
+
+shiny_brown =  {
+	"dark_green": 1,
+	"vibrant_olive": 3,
+	"wavy_indigo": 1
+}
+
+shiny_coral =  {
+	"bright_violet": 5
+}
+
+posh_plum =  {
+	"pale_coral": 3,
+	"dull_green": 1,
+	"plaid_cyan": 1,
+	"shiny_orange": 4
+}
+
+shiny_silver =  {
+	"dotted_brown": 3,
+	"bright_tomato": 3,
+	"posh_tomato": 2
+}
+
+wavy_gold =  {
+	"bright_gray": 1,
+	"shiny_fuchsia": 1
+}
+
+vibrant_yellow =  {
+	"posh_lavender": 2,
+	"pale_purple": 1,
+	"muted_plum": 5,
+	"faded_chartreuse": 3
+}
+
+drab_blue =  {
+	"drab_silver": 4,
+	"bright_plum": 4
+}
+
+vibrant_turquoise =  {
+	"bright_maroon": 2
+}
+
+pale_violet =  {
+	"faded_violet": 5
+}
+
+dark_bronze =  {
+	"faded_indigo": 4,
+	"muted_yellow": 5
+}
+
+drab_gray =  {
+ no_other
+}
+
+shiny_violet =  {
+	"bright_lime": 2,
+	"dull_magenta": 5
+}
+
+striped_tomato =  {
+	"wavy_indigo": 1,
+	"shiny_coral": 5,
+	"vibrant_bronze": 5
+}
+
+dull_yellow =  {
+	"muted_teal": 3,
+	"dim_green": 1,
+	"pale_brown": 4
+}
+
+shiny_lime =  {
+	"muted_yellow": 5,
+	"drab_gray": 1,
+	"faded_yellow": 2,
+	"pale_magenta": 1
+}
+
+vibrant_tan =  {
+	"vibrant_lime": 1,
+	"drab_blue": 1,
+	"dark_maroon": 5
+}
+
+wavy_coral =  {
+	"clear_gold": 1,
+	"drab_tan": 2,
+	"plaid_magenta": 1,
+	"pale_lime": 2
+}
+
+bright_beige =  {
+	"bright_violet": 3
+}
+
+dim_silver =  {
+	"bright_plum": 4
+}
+
+plaid_beige =  {
+	"dotted_turquoise": 4,
+	"shiny_salmon": 5,
+	"pale_red": 2
+}
+
+light_blue =  {
+ no_other
+}
+
+wavy_brown =  {
+	"light_yellow": 4,
+	"dark_coral": 1,
+	"dark_olive": 2,
+	"vibrant_teal": 4
+}
+
+pale_gray =  {
+	"faded_cyan": 5,
+	"shiny_lime": 2,
+	"striped_blue": 3,
+	"drab_purple": 5
+}
+
+vibrant_white =  {
+	"drab_gray": 3,
+	"faded_blue": 4,
+	"clear_white": 2,
+	"dull_tan": 1
+}
+
+light_lime =  {
+	"muted_white": 3,
+	"dark_fuchsia": 2
+}
+
+dark_yellow =  {
+	"vibrant_maroon": 3
+}
+
+vibrant_indigo =  {
+	"dark_olive": 4,
+	"light_purple": 5
+}
+
+faded_yellow =  {
+	"posh_brown": 1,
+	"light_blue": 2,
+	"mirrored_teal": 4,
+	"dull_crimson": 1
+}
+
+mirrored_bronze =  {
+	"bright_black": 3,
+	"faded_blue": 4,
+	"striped_salmon": 3,
+	"mirrored_olive": 4
+}
+
+pale_chartreuse =  {
+	"dim_aqua": 3,
+	"mirrored_lime": 4
+}
+
+plaid_gray =  {
+	"vibrant_aqua": 1
+}
+
+pale_fuchsia =  {
+	"wavy_yellow": 5,
+	"dotted_brown": 3,
+	"muted_black": 3,
+	"dotted_turquoise": 1
+}
+
+vibrant_olive =  {
+	"faded_tan": 1,
+	"drab_silver": 3,
+	"muted_brown": 4,
+	"faded_blue": 2
+}
+
+dotted_olive =  {
+	"plaid_gold": 3,
+	"mirrored_salmon": 5,
+	"dim_magenta": 2
+}
+
+muted_purple =  {
+	"muted_magenta": 2
+}
+
+dim_teal =  {
+	"dotted_maroon": 2
+}
+
+mirrored_red =  {
+	"dim_tan": 3,
+	"clear_black": 5,
+	"faded_violet": 3,
+	"mirrored_olive": 1
+}
+
+dark_lime =  {
+	"mirrored_violet": 3
+}
+
+shiny_beige =  {
+	"dim_yellow": 1,
+	"mirrored_coral": 2,
+	"bright_salmon": 2,
+	"vibrant_brown": 5
+}
+
+dim_gold =  {
+	"shiny_gold": 1
+}
+
+mirrored_maroon =  {
+	"faded_blue": 1
+}
+
+shiny_olive =  {
+	"plaid_olive": 5,
+	"muted_silver": 3
+}
+
+wavy_purple =  {
+	"dim_cyan": 3,
+	"dotted_white": 2,
+	"dark_coral": 4
+}
+
+drab_fuchsia =  {
+	"dull_gold": 4,
+	"muted_yellow": 3,
+	"muted_orange": 4,
+	"faded_fuchsia": 4
+}
+
+drab_beige =  {
+	"plaid_olive": 2
+}
+
+vibrant_coral =  {
+	"mirrored_cyan": 3
+}
+
+dull_salmon =  {
+	"shiny_gold": 2
+}
+
+light_chartreuse =  {
+	"plaid_cyan": 3
+}
+
+striped_silver =  {
+	"shiny_violet": 3,
+	"dark_blue": 3
+}
+
+dark_indigo =  {
+	"light_beige": 3,
+	"wavy_white": 3,
+	"light_black": 2,
+	"striped_silver": 4
+}
+
+dotted_orange =  {
+	"dull_bronze": 2,
+	"vibrant_red": 3,
+	"dull_gold": 5,
+	"shiny_yellow": 3
+}
+
+dotted_fuchsia =  {
+	"vibrant_cyan": 1,
+	"dotted_crimson": 4
+}
+
+shiny_turquoise =  {
+	"dark_aqua": 1,
+	"dark_cyan": 4
+}
+
+posh_beige =  {
+	"shiny_purple": 1
+}
+
+shiny_tan =  {
+	"bright_violet": 2,
+	"faded_orange": 5,
+	"mirrored_cyan": 2
+}
+
+faded_maroon =  {
+	"dark_red": 1,
+	"mirrored_red": 1
+}
+
+clear_tomato =  {
+	"mirrored_teal": 4,
+	"posh_turquoise": 2
+}
+
+pale_beige =  {
+	"pale_salmon": 2,
+	"dark_teal": 5,
+	"shiny_chartreuse": 4,
+	"striped_green": 5
+}
+
+dull_red =  {
+	"pale_plum": 1
+}
+
+striped_salmon =  {
+	"drab_cyan": 4,
+	"light_yellow": 5,
+	"vibrant_orange": 4,
+	"dark_gold": 4
+}
+
+dull_lavender =  {
+	"pale_blue": 3,
+	"clear_blue": 5
+}
+
+dim_red =  {
+	"vibrant_bronze": 3,
+	"dotted_gray": 3
+}
+
+light_orange =  {
+	"plaid_teal": 2,
+	"dull_brown": 2,
+	"dark_brown": 3
+}
+
+dotted_silver =  {
+	"vibrant_yellow": 1,
+	"pale_lime": 4,
+	"pale_crimson": 4
+}
+
+mirrored_gray =  {
+	"dark_coral": 1,
+	"mirrored_crimson": 2,
+	"light_yellow": 3,
+	"dull_crimson": 5
+}
+
+light_black =  {
+	"drab_tan": 1,
+	"drab_lavender": 3
+}
+
+plaid_purple =  {
+	"clear_tan": 4,
+	"dim_yellow": 3
+}
+
+mirrored_tan =  {
+	"dark_olive": 2,
+	"clear_violet": 4,
+	"wavy_salmon": 5
+}
+
+dark_silver =  {
+	"shiny_silver": 3,
+	"dark_lime": 3
+}
+
+dark_violet =  {
+	"faded_violet": 3,
+	"dull_plum": 1,
+	"drab_silver": 1,
+	"pale_purple": 1
+}
+
+drab_magenta =  {
+	"dark_aqua": 1,
+	"muted_maroon": 2,
+	"drab_green": 5
+}
+
+pale_green =  {
+	"posh_red": 5,
+	"light_fuchsia": 1,
+	"dotted_chartreuse": 2
+}
+
+mirrored_beige =  {
+	"vibrant_turquoise": 4,
+	"muted_yellow": 4,
+	"faded_cyan": 5,
+	"drab_purple": 2
+}
+
+striped_aqua =  {
+	"clear_black": 4,
+	"striped_indigo": 3
+}
+
+mirrored_crimson =  {
+	"dull_gold": 2,
+	"wavy_blue": 5,
+	"bright_plum": 2,
+	"shiny_yellow": 4
+}
+
+striped_crimson =  {
+	"clear_blue": 3
+}
+
+muted_lavender =  {
+	"drab_coral": 1,
+	"dull_gold": 2,
+	"posh_crimson": 2,
+	"mirrored_green": 1
+}
+
+light_tomato =  {
+	"dull_black": 3,
+	"posh_white": 5
+}
+
+pale_tan =  {
+	"clear_yellow": 1,
+	"vibrant_aqua": 2,
+	"wavy_red": 1,
+	"drab_chartreuse": 2
+}
+
+dotted_plum =  {
+	"shiny_tomato": 4,
+	"mirrored_olive": 1,
+	"posh_turquoise": 2,
+	"faded_bronze": 1
+}
+
+vibrant_bronze =  {
+	"vibrant_aqua": 1
+}
+
+clear_tan =  {
+	"vibrant_aqua": 5,
+	"drab_coral": 1,
+	"muted_lavender": 4,
+	"muted_orange": 1
+}
+
+dark_beige =  {
+	"dull_green": 5,
+	"clear_violet": 5,
+	"pale_coral": 1,
+	"pale_silver": 3
+}
+
+wavy_plum =  {
+	"light_teal": 4,
+	"shiny_aqua": 4,
+	"light_olive": 2,
+	"light_blue": 4
+}
+
+striped_turquoise =  {
+	"pale_salmon": 2,
+	"muted_orange": 3,
+	"posh_lavender": 3
+}
+
+mirrored_turquoise =  {
+	"vibrant_lavender": 3
+}
+
+clear_gray =  {
+	"dark_cyan": 3,
+	"mirrored_red": 2,
+	"wavy_teal": 2
+}
+
+wavy_violet =  {
+	"dark_fuchsia": 1
+}
+
+clear_crimson =  {
+	"pale_red": 1
+}
+
+faded_purple =  {
+	"shiny_black": 1,
+	"mirrored_white": 2
+}
+
+bright_white =  {
+	"dotted_maroon": 5,
+	"wavy_aqua": 1
+}
+
+pale_bronze =  {
+	"dull_teal": 5
+}
+
+bright_teal =  {
+	"mirrored_aqua": 1,
+	"drab_fuchsia": 5
+}
+
+posh_silver =  {
+	"dim_gray": 5,
+	"vibrant_beige": 5,
+	"muted_green": 2
+}
+
+posh_chartreuse =  {
+	"pale_brown": 3
+}
+
+dotted_purple =  {
+	"faded_indigo": 5,
+	"drab_magenta": 4,
+	"shiny_chartreuse": 5,
+	"faded_maroon": 3
+}
+
+dim_fuchsia =  {
+	"light_blue": 3,
+	"muted_yellow": 3
+}
+
+dark_coral =  {
+	"dull_crimson": 4,
+	"muted_brown": 3
+}
+
+faded_crimson =  {
+	"muted_teal": 1
+}
+
+mirrored_orange =  {
+	"dull_bronze": 3,
+	"dull_gold": 5,
+	"dim_gray": 4,
+	"dotted_green": 1
+}
+
+faded_aqua =  {
+	"light_gray": 1
+}
+
+vibrant_magenta =  {
+	"dark_aqua": 1
+}
+
+light_fuchsia =  {
+	"light_orange": 4,
+	"muted_chartreuse": 5,
+	"wavy_tomato": 3,
+	"dotted_violet": 1
+}
+
+light_coral =  {
+	"plaid_tan": 5
+}
+
+dim_lavender =  {
+	"pale_purple": 1
+}
+
+shiny_gray =  {
+	"shiny_purple": 5,
+	"vibrant_green": 5,
+	"bright_cyan": 1,
+	"light_blue": 5
+}
+
+dim_turquoise =  {
+ no_other
+}
+
+wavy_turquoise =  {
+	"light_white": 1,
+	"posh_magenta": 4,
+	"dim_magenta": 5
+}
+
+dim_salmon =  {
+	"faded_violet": 5,
+	"faded_lime": 1
+}
+
+wavy_bronze =  {
+	"plaid_magenta": 4
+}
+
+clear_black =  {
+	"shiny_lavender": 1
+}
+
+striped_magenta =  {
+	"shiny_cyan": 5,
+	"dotted_purple": 3,
+	"striped_silver": 4,
+	"light_coral": 3
+}
+
+striped_gray =  {
+	"faded_plum": 3,
+	"striped_fuchsia": 2,
+	"dim_gray": 1
+}
+
+wavy_cyan =  {
+	"striped_indigo": 1
+}
+
+faded_fuchsia =  {
+	"striped_fuchsia": 2
+}
+
+plaid_blue =  {
+	"dark_brown": 2,
+	"drab_gray": 5,
+	"plaid_olive": 5,
+	"dark_aqua": 1
+}
+
+pale_red =  {
+	"clear_aqua": 5,
+	"dim_turquoise": 2,
+	"drab_gray": 5,
+	"faded_turquoise": 4
+}
+
+dim_tan =  {
+ no_other
+}
+
+wavy_fuchsia =  {
+	"dull_lime": 2,
+	"drab_fuchsia": 1,
+	"drab_indigo": 3
+}
+
+drab_gold =  {
+	"bright_salmon": 4,
+	"shiny_fuchsia": 2,
+	"faded_lime": 4,
+	"plaid_magenta": 5
+}
+
+pale_lavender =  {
+	"wavy_beige": 1,
+	"striped_olive": 2
+}
+
+muted_olive =  {
+	"striped_fuchsia": 5,
+	"drab_silver": 1,
+	"dotted_lavender": 3
+}
+
+shiny_magenta =  {
+	"clear_orange": 3,
+	"plaid_silver": 2,
+	"bright_turquoise": 5,
+	"shiny_orange": 4
+}
+
+muted_blue =  {
+	"dark_gray": 3,
+	"drab_blue": 3,
+	"dark_gold": 4,
+	"bright_tomato": 5
+}
+
+dotted_red =  {
+	"striped_plum": 4,
+	"shiny_aqua": 5,
+	"clear_red": 2
+}
+
+vibrant_tomato =  {
+	"wavy_white": 3,
+	"mirrored_lime": 1,
+	"dark_fuchsia": 1
+}
+
+dull_silver =  {
+	"posh_black": 4,
+	"dark_gray": 3,
+	"pale_plum": 3
+}
+
+dark_chartreuse =  {
+	"dull_blue": 3,
+	"dim_tan": 1
+}
+
+clear_gold =  {
+	"muted_magenta": 3,
+	"dim_teal": 3,
+	"vibrant_olive": 4,
+	"vibrant_salmon": 1
+}
+
+posh_teal =  {
+	"wavy_red": 4
+}
+
+pale_blue =  {
+	"dim_red": 1,
+	"clear_silver": 4,
+	"dull_salmon": 2,
+	"vibrant_salmon": 4
+}
+
+dotted_gray =  {
+	"vibrant_bronze": 4,
+	"dark_maroon": 4,
+	"muted_lavender": 4
+}
+
+dotted_magenta =  {
+	"dull_purple": 2,
+	"dim_gold": 4,
+	"drab_gray": 5,
+	"faded_bronze": 4
+}
+
+faded_gold =  {
+	"clear_black": 2,
+	"pale_tomato": 3,
+	"wavy_aqua": 3
+}
+
+light_turquoise =  {
+	"bright_tan": 2,
+	"muted_chartreuse": 2
+}
+
+muted_green =  {
+	"muted_gold": 4,
+	"posh_black": 4,
+	"striped_fuchsia": 1,
+	"dotted_blue": 1
+}
+
+light_beige =  {
+	"muted_olive": 5
+}
+
+striped_brown =  {
+	"bright_white": 4,
+	"pale_teal": 1
+}
+
+vibrant_blue =  {
+	"clear_aqua": 4,
+	"striped_green": 2,
+	"faded_indigo": 1
+}
+
+dim_purple =  {
+	"bright_coral": 4,
+	"posh_yellow": 2
+}
+
+dim_aqua =  {
+	"faded_plum": 3,
+	"dim_red": 2
+}
+
+clear_salmon =  {
+	"drab_gray": 2,
+	"mirrored_cyan": 1
+}
+
+plaid_tan =  {
+	"muted_yellow": 5,
+	"bright_brown": 1
+}
+
+striped_green =  {
+	"drab_cyan": 2,
+	"dim_gray": 5
+}
+
+dark_gray =  {
+	"muted_teal": 3,
+	"clear_violet": 1,
+	"bright_cyan": 5
+}
+
+clear_lavender =  {
+	"dark_red": 1,
+	"wavy_blue": 1,
+	"plaid_silver": 2
+}
+
+vibrant_gold =  {
+	"dark_brown": 5
+}
+
+drab_indigo =  {
+	"wavy_aqua": 3,
+	"mirrored_indigo": 3,
+	"dull_brown": 5
+}
+
+light_white =  {
+	"dull_plum": 2,
+	"drab_orange": 2
+}
+
+posh_orange =  {
+	"wavy_plum": 4,
+	"posh_tan": 2,
+	"bright_blue": 1,
+	"muted_red": 4
+}
+
+drab_red =  {
+	"mirrored_maroon": 2,
+	"light_coral": 4
+}
+
+muted_silver =  {
+	"muted_maroon": 5,
+	"clear_fuchsia": 3,
+	"dark_gold": 3
+}
+
+plaid_olive =  {
+	"posh_red": 1,
+	"pale_crimson": 1,
+	"shiny_tomato": 5
+}
+
+light_tan =  {
+	"dull_bronze": 1,
+	"dim_lavender": 2
+}
+
+plaid_white =  {
+	"dim_turquoise": 3
+}
+
+pale_aqua =  {
+	"vibrant_crimson": 1,
+	"striped_silver": 3,
+	"bright_lavender": 3,
+	"shiny_white": 3
+}
+
+bright_tomato =  {
+	"drab_purple": 5,
+	"shiny_black": 1,
+	"wavy_turquoise": 4
+}
+
+dotted_green =  {
+	"dim_cyan": 3,
+	"faded_violet": 4
+}
+
+faded_silver =  {
+	"shiny_violet": 1,
+	"faded_lavender": 5
+}
+
+vibrant_cyan =  {
+	"bright_green": 1,
+	"muted_teal": 4,
+	"clear_salmon": 3
+}
+
+mirrored_blue =  {
+	"muted_teal": 2,
+	"posh_crimson": 4,
+	"dim_indigo": 2,
+	"clear_black": 1
+}
+
+faded_olive =  {
+	"faded_fuchsia": 3,
+	"dotted_maroon": 3,
+	"wavy_red": 5,
+	"plaid_chartreuse": 4
+}
+
+striped_lavender =  {
+	"vibrant_salmon": 2,
+	"bright_black": 5,
+	"dull_blue": 5
+}
+
+bright_green =  {
+	"muted_maroon": 2,
+	"dim_orange": 3
+}
+
+striped_teal =  {
+	"light_brown": 4,
+	"plaid_brown": 5,
+	"clear_turquoise": 4
+}
+
+posh_yellow =  {
+	"pale_teal": 1,
+	"dark_crimson": 5
+}
+
+clear_cyan =  {
+	"muted_silver": 1,
+	"shiny_white": 5,
+	"dotted_white": 4,
+	"striped_fuchsia": 2
+}
+
+drab_tan =  {
+	"vibrant_bronze": 3,
+	"pale_white": 1
+}
+
+muted_chartreuse =  {
+	"clear_white": 1,
+	"shiny_violet": 1,
+	"bright_fuchsia": 5
+}
+
+drab_aqua =  {
+	"mirrored_tan": 3
+}
+
+vibrant_gray =  {
+	"mirrored_salmon": 2,
+	"dotted_brown": 3,
+	"wavy_maroon": 3,
+	"shiny_maroon": 4
+}
+
+faded_teal =  {
+	"drab_gray": 2,
+	"dim_gold": 1,
+	"drab_orange": 4,
+	"clear_violet": 5
+}
+
+wavy_red =  {
+	"drab_coral": 4,
+	"dotted_lavender": 4,
+	"dim_turquoise": 5
+}
+
+dull_white =  {
+	"mirrored_green": 3,
+	"dim_turquoise": 5
+}
+
+dotted_chartreuse =  {
+	"dotted_green": 1,
+	"dull_blue": 4,
+	"striped_indigo": 1,
+	"dim_tomato": 5
+}
+
+posh_maroon =  {
+	"dull_salmon": 2,
+	"clear_bronze": 5,
+	"bright_cyan": 5,
+	"clear_silver": 5
+}
+
+faded_white =  {
+	"drab_gray": 4,
+	"dim_gray": 4
+}
+
+striped_black =  {
+	"bright_salmon": 1,
+	"faded_white": 3,
+	"dark_magenta": 3,
+	"muted_plum": 1
+}
+
+striped_indigo =  {
+	"shiny_tomato": 3,
+	"mirrored_olive": 2
+}
+
+striped_white =  {
+	"vibrant_maroon": 4
+}
+
+dim_gray =  {
+	"dull_gold": 2
+}
+
+faded_coral =  {
+	"mirrored_lavender": 5,
+	"vibrant_plum": 2
+}
+
+mirrored_tomato =  {
+	"light_yellow": 5,
+	"drab_orange": 2
+}
+
+dotted_tan =  {
+	"posh_plum": 2,
+	"pale_teal": 2,
+	"pale_maroon": 2
+}
+
+dotted_turquoise =  {
+	"mirrored_crimson": 5,
+	"dull_orange": 2
+}
+
+dim_yellow =  {
+	"bright_cyan": 2,
+	"dim_turquoise": 3,
+	"mirrored_green": 2
+}
+
+vibrant_crimson =  {
+	"posh_maroon": 5
+}
+
+pale_crimson =  {
+	"clear_black": 4,
+	"dull_crimson": 5,
+	"dotted_green": 5
+}
+
+light_indigo =  {
+	"clear_black": 3
+}
+
+plaid_cyan =  {
+	"plaid_tan": 3,
+	"drab_coral": 3
+}
+
+drab_bronze =  {
+	"dull_teal": 5,
+	"plaid_coral": 3,
+	"faded_beige": 2,
+	"plaid_aqua": 4
+}
+
+drab_orange =  {
+	"mirrored_green": 1
+}
+
+mirrored_lime =  {
+	"shiny_gray": 1,
+	"dim_indigo": 3
+}
+
+posh_aqua =  {
+	"muted_tan": 4,
+	"faded_yellow": 2
+}
+
+light_purple =  {
+	"shiny_chartreuse": 2,
+	"dim_gray": 2,
+	"pale_red": 5
+}
+
+dull_teal =  {
+	"posh_crimson": 3,
+	"dotted_blue": 1,
+	"muted_yellow": 3
+}
+
+vibrant_red =  {
+	"faded_white": 4,
+	"dim_tan": 5,
+	"shiny_lavender": 4,
+	"dim_turquoise": 1
+}
+
+dull_cyan =  {
+	"dotted_silver": 1,
+	"striped_olive": 5,
+	"faded_gray": 5,
+	"dark_green": 1
+}
+
+dim_crimson =  {
+	"posh_lime": 1,
+	"dark_salmon": 1
+}
+
+light_violet =  {
+	"posh_brown": 5
+}
+
+clear_orange =  {
+	"light_olive": 2,
+	"faded_turquoise": 4,
+	"drab_gray": 4,
+	"mirrored_olive": 2
+}
+
+dotted_crimson =  {
+	"pale_magenta": 4,
+	"muted_red": 5,
+	"shiny_yellow": 4
+}
+
+posh_gray =  {
+	"dull_lavender": 4,
+	"dim_gray": 4
+}
+
+faded_tomato =  {
+	"striped_salmon": 3,
+	"bright_lime": 1,
+	"vibrant_magenta": 4
+}
+
+clear_bronze =  {
+	"bright_plum": 5,
+	"dim_beige": 1,
+	"dim_cyan": 1,
+	"dotted_blue": 5
+}
+
+clear_fuchsia =  {
+	"vibrant_olive": 3,
+	"pale_crimson": 3,
+	"wavy_maroon": 4,
+	"drab_olive": 4
+}
+
+bright_violet =  {
+	"faded_blue": 3
+}
+
+muted_brown =  {
+	"muted_lavender": 1
+}
+
+faded_turquoise =  {
+	"dull_gold": 3,
+	"muted_orange": 3,
+	"light_blue": 4,
+	"dotted_gray": 1
+}
+
+dim_indigo =  {
+	"muted_maroon": 5
+}
+
+plaid_black =  {
+	"plaid_teal": 4,
+	"vibrant_green": 5
+}
+
+dull_purple =  {
+	"shiny_gold": 2,
+	"dim_gray": 4
+}
+
+dull_crimson =  {
+	"dull_gold": 1,
+	"vibrant_aqua": 4
+}
+
+light_aqua =  {
+	"mirrored_orange": 5,
+	"wavy_aqua": 4
+}
+
+pale_lime =  {
+	"drab_coral": 4,
+	"vibrant_chartreuse": 3,
+	"posh_crimson": 4
+}
+
+faded_plum =  {
+	"muted_brown": 1,
+	"dull_bronze": 4,
+	"plaid_white": 1,
+	"drab_blue": 1
+}
+
+clear_silver =  {
+	"muted_gray": 4,
+	"mirrored_maroon": 5,
+	"clear_violet": 1
+}
+
+light_brown =  {
+	"shiny_maroon": 4,
+	"drab_lavender": 1,
+	"dark_violet": 5,
+	"dull_green": 4
+}
+
+light_crimson =  {
+	"light_magenta": 4,
+	"mirrored_blue": 3,
+	"pale_tomato": 1,
+	"muted_tomato": 1
+}
+
+plaid_orange =  {
+	"dull_silver": 4
+}
+
+muted_black =  {
+	"dull_tomato": 2,
+	"mirrored_teal": 5
+}
+
+dotted_bronze =  {
+	"dim_tan": 4
+}
+
+drab_tomato =  {
+	"muted_lime": 4,
+	"striped_cyan": 2
+}
+
+clear_indigo =  {
+	"dull_lavender": 5,
+	"dark_indigo": 4
+}
+
+pale_purple =  {
+	"dim_beige": 5,
+	"shiny_tomato": 5,
+	"mirrored_olive": 3,
+	"muted_lavender": 5
+}
+
+mirrored_silver =  {
+	"vibrant_maroon": 4
+}
+
+bright_aqua =  {
+	"bright_olive": 5,
+	"drab_magenta": 2,
+	"dim_teal": 2
+}
+
+wavy_magenta =  {
+	"clear_fuchsia": 3,
+	"mirrored_gray": 3,
+	"dull_fuchsia": 4
+}
+
+dull_blue =  {
+	"drab_coral": 5,
+	"drab_chartreuse": 5
+}
+
+dim_plum =  {
+	"muted_magenta": 1,
+	"shiny_lavender": 3
+}
+
+muted_bronze =  {
+	"posh_white": 3,
+	"clear_black": 5,
+	"mirrored_lime": 3
+}
+
+drab_cyan =  {
+	"drab_blue": 1
+}
+
+faded_tan =  {
+	"pale_plum": 4
+}
+
+posh_violet =  {
+	"dim_silver": 2
+}
+
+posh_blue =  {
+	"clear_yellow": 5,
+	"light_indigo": 3
+}
+
+muted_orange =  {
+	"drab_gray": 5,
+	"dim_turquoise": 1
+}
+
+bright_lavender =  {
+	"drab_cyan": 1
+}
+
+clear_brown =  {
+	"shiny_teal": 2
+}
+
+light_maroon =  {
+	"dim_fuchsia": 4,
+	"light_yellow": 1,
+	"pale_magenta": 3
+}
+
+muted_indigo =  {
+	"shiny_gold": 4,
+	"clear_teal": 1,
+	"light_gray": 4,
+	"shiny_orange": 2
+}
+
+striped_red =  {
+	"wavy_blue": 4,
+	"vibrant_maroon": 1,
+	"shiny_yellow": 5
+}
+
+drab_olive =  {
+	"dull_blue": 2,
+	"pale_coral": 5,
+	"vibrant_salmon": 1,
+	"dotted_green": 1
+}
+
+dotted_aqua =  {
+	"dim_aqua": 5,
+	"drab_olive": 1,
+	"dim_violet": 5,
+	"light_plum": 2
+}
+
+dull_indigo =  {
+	"vibrant_gold": 5
+}
+
+drab_turquoise =  {
+	"pale_salmon": 3,
+	"shiny_violet": 1,
+	"shiny_orange": 1,
+	"mirrored_olive": 1
+}
+
+bright_turquoise =  {
+	"dotted_green": 1
+}
+
+bright_tan =  {
+	"faded_cyan": 5,
+	"mirrored_aqua": 5,
+	"dim_orange": 3
+}
+
+bright_chartreuse =  {
+	"dim_bronze": 1,
+	"posh_bronze": 3,
+	"drab_salmon": 3
+}
+
+vibrant_orange =  {
+	"dim_fuchsia": 3,
+	"dull_crimson": 3,
+	"vibrant_salmon": 5
+}
+
+bright_lime =  {
+	"posh_tomato": 3,
+	"striped_indigo": 4,
+	"dull_white": 1,
+	"light_plum": 2
+}
+
+dark_black =  {
+	"muted_aqua": 1
+}
+
+pale_silver =  {
+	"dull_fuchsia": 2,
+	"dark_maroon": 2
+}
+
+dotted_maroon =  {
+	"drab_olive": 2
+}
+
+shiny_gold =  {
+	"dim_beige": 2,
+	"dark_maroon": 1,
+	"light_blue": 4
+}
+
+posh_lime =  {
+	"shiny_green": 1,
+	"drab_purple": 3,
+	"vibrant_blue": 3
+}
+
+vibrant_violet =  {
+	"dim_silver": 5,
+	"dotted_maroon": 4,
+	"drab_fuchsia": 5,
+	"clear_plum": 5
+}
+
+bright_silver =  {
+	"drab_coral": 2,
+	"mirrored_red": 5,
+	"drab_fuchsia": 5
+}
+
+dark_purple =  {
+	"drab_chartreuse": 1,
+	"posh_lavender": 1,
+	"clear_blue": 1
+}
+
+light_green =  {
+	"dark_plum": 1,
+	"dull_olive": 5,
+	"shiny_lavender": 4
+}
+
+dull_beige =  {
+	"light_indigo": 5
+}
+
+muted_gold =  {
+	"mirrored_magenta": 2,
+	"shiny_orange": 5,
+	"drab_lavender": 5
+}
+
+plaid_gold =  {
+	"dark_crimson": 4,
+	"dotted_crimson": 3
+}
+
+plaid_silver =  {
+	"dotted_blue": 2,
+	"vibrant_aqua": 1,
+	"shiny_chartreuse": 2
+}
+
+vibrant_green =  {
+	"posh_brown": 5,
+	"light_gray": 3,
+	"wavy_blue": 2
+}
+
+posh_crimson =  {
+	"dim_turquoise": 2,
+	"dim_tan": 3,
+	"dotted_lavender": 4
+}
+
+bright_coral =  {
+	"faded_chartreuse": 1
+}
+
+shiny_teal =  {
+	"muted_orange": 2,
+	"muted_olive": 5,
+	"mirrored_olive": 5
+}
+
+posh_brown =  {
+	"posh_crimson": 4
+}
+
+pale_white =  {
+	"dark_coral": 5,
+	"dim_tomato": 3,
+	"wavy_indigo": 3
+}
+
+clear_olive =  {
+	"bright_plum": 1
+}
+
+dotted_violet =  {
+	"posh_plum": 3
+}
+
+vibrant_salmon =  {
+	"dim_beige": 3,
+	"light_gray": 2,
+	"wavy_red": 2,
+	"dull_brown": 5
+}
+
+dotted_indigo =  {
+	"dull_maroon": 1
+}
+
+clear_lime =  {
+	"posh_maroon": 5,
+	"muted_coral": 1,
+	"wavy_maroon": 5,
+	"muted_orange": 3
+}
+
+posh_cyan =  {
+	"posh_black": 3,
+	"drab_black": 4
+}
+
+striped_blue =  {
+	"dim_yellow": 5,
+	"wavy_chartreuse": 1
+}
+
+dark_cyan =  {
+	"faded_blue": 1
+}
+
+clear_magenta =  {
+	"muted_green": 3,
+	"dotted_aqua": 5,
+	"posh_gray": 2
+}
+
+dull_lime =  {
+	"dotted_lavender": 4,
+	"dim_cyan": 3,
+	"dim_tan": 4
+}
+
+pale_brown =  {
+	"dim_gray": 3
+}
+
+dull_violet =  {
+	"posh_tomato": 2,
+	"clear_blue": 2,
+	"drab_silver": 2,
+	"muted_gray": 4
+}
+
+dark_tan =  {
+	"dim_cyan": 2,
+	"dotted_lavender": 4
+}
+
+dotted_black =  {
+	"plaid_olive": 3,
+	"posh_plum": 3,
+	"wavy_turquoise": 3,
+	"muted_teal": 5
+}
+
+muted_cyan =  {
+	"shiny_tan": 2,
+	"bright_aqua": 1,
+	"dotted_lavender": 4,
+	"vibrant_crimson": 3
+}
+
+clear_green =  {
+	"dotted_violet": 1,
+	"dotted_bronze": 3,
+	"clear_bronze": 1
+}
+
+bright_olive =  {
+	"muted_orange": 4,
+	"dotted_orange": 3
+}
+
+dull_turquoise =  {
+	"faded_lavender": 1,
+	"dark_blue": 5,
+	"striped_cyan": 3
+}
+
+mirrored_plum =  {
+	"dull_violet": 5,
+	"faded_turquoise": 3
+}
+
+plaid_lavender =  {
+	"striped_green": 2,
+	"posh_magenta": 2,
+	"drab_cyan": 3,
+	"bright_plum": 3
+}
+
+clear_yellow =  {
+	"mirrored_green": 1,
+	"dotted_blue": 2
+}
+
+light_gold =  {
+	"dark_blue": 3
+}
+
+dark_gold =  {
+	"light_aqua": 1
+}
+
+drab_crimson =  {
+	"posh_coral": 2,
+	"shiny_red": 1
+}
+
+faded_chartreuse =  {
+	"vibrant_red": 2,
+	"vibrant_aqua": 4,
+	"pale_purple": 5,
+	"mirrored_olive": 5
+}
+
+bright_plum =  {
+	"pale_tan": 2
+}
+
+muted_crimson =  {
+	"dotted_orange": 3,
+	"bright_orange": 4,
+	"drab_maroon": 3,
+	"vibrant_turquoise": 2
+}
+
+dim_black =  {
+	"shiny_green": 3,
+	"mirrored_gold": 5,
+	"wavy_fuchsia": 2
+}
+
+pale_gold =  {
+	"wavy_silver": 2,
+	"muted_magenta": 3
+}
+
+wavy_black =  {
+	"dim_beige": 2,
+	"clear_bronze": 1,
+	"shiny_gray": 5
+}
+
+dim_green =  {
+	"wavy_maroon": 1
+}
+
+dull_tomato =  {
+	"mirrored_red": 4,
+	"dark_violet": 1,
+	"posh_magenta": 2,
+	"light_indigo": 1
+}
+
+clear_beige =  {
+	"posh_coral": 1,
+	"dim_silver": 4,
+	"wavy_turquoise": 1,
+	"bright_white": 4
+}
+
+posh_red =  {
+	"dim_cyan": 5
+}
+
+dark_turquoise =  {
+	"dark_cyan": 1,
+	"light_blue": 3
+}
+
+clear_maroon =  {
+	"mirrored_white": 2,
+	"dull_plum": 5,
+	"dull_beige": 3
+}
+
+light_silver =  {
+	"shiny_violet": 4,
+	"posh_indigo": 4,
+	"wavy_white": 1
+}
+
+muted_salmon =  {
+	"dim_lime": 3,
+	"shiny_violet": 2,
+	"dark_green": 2,
+	"mirrored_chartreuse": 1
+}
+
+muted_plum =  {
+	"bright_coral": 3,
+	"posh_indigo": 5,
+	"bright_gray": 4
+}
+
+dim_orange =  {
+	"mirrored_brown": 5,
+	"dim_turquoise": 4
+}
+
+light_gray =  {
+	"light_blue": 2,
+	"pale_purple": 2
+}
+
+mirrored_magenta =  {
+	"pale_coral": 5,
+	"dark_crimson": 1
+}
+
+drab_lavender =  {
+	"clear_yellow": 3
+}
+
+striped_tan =  {
+	"dotted_black": 1,
+	"dull_crimson": 1
+}
+
+wavy_aqua =  {
+	"muted_teal": 1
+}
+
+light_olive =  {
+	"drab_magenta": 4
+}
+
+bright_indigo =  {
+	"mirrored_gray": 1,
+	"vibrant_red": 4,
+	"dim_tomato": 3
+}
+
+dotted_yellow =  {
+	"drab_olive": 1,
+	"pale_crimson": 4,
+	"drab_gray": 4,
+	"striped_fuchsia": 2
+}
+
+mirrored_lavender =  {
+	"drab_coral": 3,
+	"dim_indigo": 3,
+	"dim_gold": 4,
+	"wavy_salmon": 5
+}
+
+muted_white =  {
+	"bright_brown": 5,
+	"bright_plum": 5,
+	"dull_gold": 1
+}
+
+posh_fuchsia =  {
+	"dotted_aqua": 3
+}
+
+dotted_brown =  {
+	"dim_turquoise": 4,
+	"dotted_gray": 1,
+	"dark_magenta": 3,
+	"bright_coral": 2
+}
+
+shiny_bronze =  {
+	"mirrored_indigo": 4,
+	"wavy_turquoise": 2,
+	"wavy_blue": 2,
+	"mirrored_beige": 3
+}
+
+vibrant_teal =  {
+	"dark_violet": 1,
+	"wavy_blue": 3,
+	"dull_fuchsia": 1
+}
+
+plaid_indigo =  {
+	"vibrant_magenta": 4,
+	"dull_cyan": 2
+}
+
+muted_turquoise =  {
+	"dark_magenta": 5,
+	"drab_gray": 5,
+	"plaid_red": 4
+}
+
+striped_bronze =  {
+	"bright_white": 5,
+	"clear_bronze": 2,
+	"bright_silver": 3
+}
+
+posh_salmon =  {
+	"drab_maroon": 4,
+	"mirrored_bronze": 3,
+	"faded_plum": 4
+}
+
+light_magenta =  {
+	"dark_purple": 5,
+	"plaid_silver": 3
+}
+
+dull_fuchsia =  {
+	"posh_red": 3,
+	"dark_coral": 4,
+	"dark_aqua": 2
+}
+
+vibrant_aqua =  {
+	"drab_coral": 3,
+	"dim_cyan": 3,
+	"dim_tan": 5
+}
+
+muted_red =  {
+	"plaid_teal": 3,
+	"posh_coral": 1,
+	"posh_plum": 3
+}
+
+drab_yellow =  {
+	"bright_brown": 3,
+	"mirrored_aqua": 3
+}
+
+dim_cyan =  {
+ no_other
+}
+
+shiny_yellow =  {
+	"wavy_red": 4,
+	"dotted_blue": 2
+}
+
+bright_maroon =  {
+	"drab_gray": 4,
+	"mirrored_olive": 1,
+	"faded_white": 5
+}
+
+dark_crimson =  {
+	"drab_orange": 4,
+	"vibrant_red": 5,
+	"pale_purple": 1
+}
+
+shiny_cyan =  {
+	"faded_plum": 4,
+	"faded_teal": 4,
+	"posh_indigo": 1
+}
+
+posh_olive =  {
+	"dark_tan": 1,
+	"drab_green": 1,
+	"pale_cyan": 5,
+	"vibrant_turquoise": 4
+}
+
+dull_chartreuse =  {
+	"shiny_chartreuse": 3,
+	"striped_brown": 3,
+	"mirrored_blue": 2,
+	"pale_coral": 3
+}
+
+dim_bronze =  {
+	"muted_olive": 4
+}
+
+faded_orange =  {
+	"vibrant_red": 2
+}
+
+dim_violet =  {
+	"posh_red": 1,
+	"plaid_tan": 5
+}
+
+wavy_indigo =  {
+	"bright_olive": 2,
+	"shiny_red": 3,
+	"clear_blue": 4
+}
+
+dull_coral =  {
+	"faded_magenta": 4,
+	"plaid_lime": 1,
+	"dotted_red": 2
+}
+
+dotted_white =  {
+	"mirrored_purple": 2,
+	"faded_cyan": 4,
+	"vibrant_salmon": 1
+}
+
+shiny_crimson =  {
+	"mirrored_magenta": 5,
+	"plaid_silver": 2,
+	"vibrant_brown": 3,
+	"vibrant_orange": 2
+}
+
+bright_magenta =  {
+	"light_silver": 1,
+	"striped_salmon": 1,
+	"dark_gold": 4,
+	"faded_lime": 5
+}
+
+dotted_salmon =  {
+	"dim_purple": 5,
+	"dull_indigo": 4,
+	"pale_turquoise": 2
+}
+
+clear_purple =  {
+	"clear_coral": 2,
+	"muted_green": 2,
+	"clear_maroon": 5
+}
+
+mirrored_purple =  {
+	"drab_silver": 4,
+	"wavy_aqua": 1,
+	"shiny_teal": 1
+}
+
+wavy_teal =  {
+	"dull_salmon": 5,
+	"bright_coral": 2,
+	"bright_plum": 2
+}
+
+shiny_red =  {
+	"dull_indigo": 4,
+	"pale_coral": 4,
+	"wavy_blue": 3
+}
+
+wavy_tan =  {
+	"faded_turquoise": 5,
+	"posh_tomato": 2,
+	"dark_green": 4,
+	"dull_crimson": 4
+}
+
+wavy_crimson =  {
+	"vibrant_gold": 3,
+	"drab_magenta": 3,
+	"dull_salmon": 3
+}
+
+wavy_olive =  {
+	"pale_blue": 2,
+	"dull_gold": 1,
+	"clear_aqua": 3,
+	"mirrored_gray": 1
+}
+
+shiny_salmon =  {
+	"mirrored_aqua": 2,
+	"mirrored_tan": 3,
+	"wavy_blue": 1
+}
+
+dark_plum =  {
+	"faded_salmon": 1,
+	"faded_plum": 1,
+	"pale_tan": 3
+}
+
+mirrored_yellow =  {
+	"clear_lime": 3
+}
+
+dark_lavender =  {
+	"muted_teal": 5,
+	"shiny_bronze": 5
+}
+
+pale_tomato =  {
+	"clear_silver": 2,
+	"shiny_green": 3,
+	"mirrored_blue": 2,
+	"vibrant_beige": 4
+}
+
+dotted_cyan =  {
+	"light_gray": 4
+}
+
+wavy_silver =  {
+	"drab_teal": 4,
+	"vibrant_maroon": 5,
+	"wavy_teal": 4,
+	"striped_turquoise": 4
+}
+
+vibrant_brown =  {
+	"striped_gray": 5,
+	"bright_turquoise": 1
+}
+
+mirrored_salmon =  {
+	"bright_salmon": 1,
+	"drab_lavender": 4
+}
+
+striped_violet =  {
+	"drab_teal": 5
+}
+
+bright_gold =  {
+	"clear_blue": 4,
+	"dull_gray": 2,
+	"striped_red": 1,
+	"muted_indigo": 5
+}
+
+faded_cyan =  {
+	"dark_green": 5
+}
+
+plaid_fuchsia =  {
+	"posh_blue": 2
+}
+
+posh_green =  {
+	"striped_cyan": 4,
+	"bright_lime": 2,
+	"dotted_black": 1,
+	"dim_silver": 5
+}
+
+dull_plum =  {
+	"striped_fuchsia": 4
+}
+
+dull_brown =  {
+	"faded_bronze": 1,
+	"posh_tomato": 5,
+	"muted_gray": 1
+}
+
+dull_aqua =  {
+	"light_blue": 1,
+	"vibrant_bronze": 1,
+	"posh_brown": 1
+}
+
+clear_plum =  {
+	"clear_silver": 4,
+	"bright_beige": 2,
+	"mirrored_red": 5,
+	"dull_magenta": 2
+}
+
+dull_orange =  {
+	"light_blue": 1,
+	"shiny_maroon": 5
+}
+
+wavy_maroon =  {
+	"dotted_gray": 3,
+	"faded_indigo": 3,
+	"dim_cyan": 3
+}
+
+plaid_teal =  {
+	"dotted_blue": 2,
+	"vibrant_olive": 5,
+	"faded_orange": 5
+}
+
+muted_gray =  {
+	"dim_tan": 1,
+	"shiny_tomato": 1,
+	"vibrant_bronze": 3,
+	"drab_coral": 1
+}
+
+plaid_aqua =  {
+	"mirrored_tan": 3,
+	"mirrored_green": 2,
+	"dark_gray": 2,
+	"dotted_blue": 4
+}
+
+striped_beige =  {
+	"clear_salmon": 4
+}
+
+faded_beige =  {
+	"vibrant_red": 4,
+	"pale_tan": 3
+}
+
+pale_salmon =  {
+	"mirrored_chartreuse": 3,
+	"striped_salmon": 3,
+	"faded_blue": 4
+}
+
+plaid_turquoise =  {
+	"shiny_lavender": 3,
+	"faded_beige": 3
+}
+
+muted_fuchsia =  {
+	"muted_indigo": 3,
+	"vibrant_red": 3,
+	"dim_lavender": 4,
+	"dull_teal": 4
+}
+
+drab_black =  {
+	"dark_beige": 5,
+	"mirrored_olive": 3,
+	"faded_turquoise": 3
+}
+
+shiny_fuchsia =  {
+	"muted_brown": 3,
+	"dim_beige": 4
+}
+
+shiny_maroon =  {
+	"dark_bronze": 2,
+	"bright_salmon": 2,
+	"striped_cyan": 5
+}
+
+shiny_lavender =  {
+	"muted_orange": 3,
+	"bright_plum": 1,
+	"muted_lavender": 5
+}
+
+bright_gray =  {
+	"plaid_tan": 1,
+	"dotted_gray": 2
+}
+
+striped_purple =  {
+	"posh_black": 5,
+	"striped_fuchsia": 2,
+	"mirrored_magenta": 3,
+	"dark_tan": 3
+}
+
+faded_red =  {
+	"posh_coral": 5,
+	"dim_silver": 3,
+	"bright_black": 2,
+	"muted_green": 3
+}
+
+dim_blue =  {
+	"drab_purple": 5
+}
+
+dotted_gold =  {
+	"pale_coral": 5,
+	"dim_bronze": 5
+}
+
+bright_crimson =  {
+	"clear_purple": 2,
+	"plaid_yellow": 2,
+	"muted_fuchsia": 4
+}
+
+dull_gold =  {
+ no_other
+}
+
+mirrored_teal =  {
+	"wavy_maroon": 4,
+	"faded_magenta": 1,
+	"wavy_teal": 2,
+	"vibrant_salmon": 2
+}
+
+dotted_lavender =  {
+ no_other
+}
+
+muted_aqua =  {
+	"muted_tan": 4
+}
+
+vibrant_black =  {
+	"plaid_white": 3
+}
+
+pale_maroon =  {
+	"dotted_cyan": 3,
+	"posh_brown": 4,
+	"bright_salmon": 1
+}
+
+dark_maroon =  {
+	"shiny_tomato": 1,
+	"mirrored_white": 2,
+	"posh_red": 2
+}
+
+pale_magenta =  {
+	"vibrant_red": 4,
+	"bright_cyan": 3
+}
+
+posh_lavender =  {
+	"dim_silver": 5,
+	"striped_indigo": 3,
+	"muted_gray": 3,
+	"dull_violet": 3
+}
+
+striped_chartreuse =  {
+	"shiny_chartreuse": 2,
+	"drab_gray": 5,
+	"dotted_brown": 2,
+	"plaid_coral": 1
+}
+
+muted_teal =  {
+	"clear_black": 5,
+	"light_white": 1,
+	"posh_crimson": 4,
+	"faded_beige": 4
+}
+
+mirrored_chartreuse =  {
+	"bright_silver": 1,
+	"light_plum": 1,
+	"drab_purple": 2
+}
+
+dim_lime =  {
+	"dotted_gray": 1,
+	"muted_olive": 4,
+	"muted_gray": 2
+}
+
+drab_violet =  {
+	"plaid_fuchsia": 1,
+	"dull_white": 4,
+	"posh_beige": 3
+}
+
+bright_fuchsia =  {
+	"pale_turquoise": 1,
+	"dotted_cyan": 5
+}
+
+striped_lime =  {
+	"light_blue": 3,
+	"drab_fuchsia": 4,
+	"light_aqua": 5,
+	"dim_indigo": 1
+}
+
+wavy_lavender =  {
+	"dull_violet": 4
+}
+
+drab_maroon =  {
+	"pale_brown": 1,
+	"pale_purple": 1
+}
+
+clear_chartreuse =  {
+	"faded_fuchsia": 4,
+	"light_gray": 2,
+	"vibrant_maroon": 3,
+	"posh_lavender": 3
+}
+
+clear_teal =  {
+	"faded_teal": 1,
+	"muted_white": 4
+}
+
+dull_black =  {
+	"pale_blue": 1,
+	"shiny_green": 2,
+	"plaid_plum": 3,
+	"faded_turquoise": 2
+}
+
+dark_olive =  {
+	"faded_tan": 1,
+	"dim_beige": 3,
+	"dark_chartreuse": 4,
+	"light_yellow": 5
+}
+
+faded_green =  {
+	"striped_green": 4,
+	"dotted_blue": 5,
+	"striped_beige": 3
+}
+
+drab_green =  {
+	"clear_aqua": 1,
+	"light_plum": 4
+}
+
+mirrored_green =  {
+ no_other
+}
+
+posh_black =  {
+	"striped_cyan": 4,
+	"dim_tan": 2,
+	"drab_blue": 5,
+	"faded_white": 5
+}
+
+muted_magenta =  {
+	"vibrant_aqua": 2
+}
+
+mirrored_brown =  {
+	"wavy_turquoise": 4,
+	"dull_magenta": 1,
+	"dim_silver": 1,
+	"dim_gray": 2
+}
+
+plaid_brown =  {
+	"mirrored_brown": 5,
+	"mirrored_lime": 4,
+	"clear_red": 1
+}
+
+posh_white =  {
+	"clear_bronze": 5,
+	"faded_maroon": 5,
+	"light_lavender": 3
+}
+
+posh_turquoise =  {
+	"pale_tan": 1,
+	"dark_purple": 1,
+	"shiny_white": 4,
+	"drab_brown": 2
+}
+
+dim_brown =  {
+	"drab_coral": 2
+}
+
+plaid_violet =  {
+	"clear_lavender": 4,
+	"drab_maroon": 4,
+	"muted_maroon": 4,
+	"bright_red": 1
+}
+
+posh_coral =  {
+	"shiny_gold": 1,
+	"dim_red": 4,
+	"dull_aqua": 5
+}
+
+bright_black =  {
+	"dull_teal": 2
+}
+
+plaid_bronze =  {
+	"bright_orange": 1,
+	"wavy_turquoise": 5,
+	"vibrant_beige": 5
+}
+
+drab_plum =  {
+	"bright_lime": 2
+}
+
+shiny_green =  {
+	"wavy_blue": 5,
+	"bright_lime": 4
+}
+
+drab_teal =  {
+	"wavy_aqua": 1,
+	"mirrored_gray": 2,
+	"dim_lavender": 5
+}
+
+bright_blue =  {
+	"muted_purple": 4,
+	"bright_fuchsia": 3,
+	"muted_maroon": 5
+}
+
+shiny_chartreuse =  {
+	"clear_violet": 2,
+	"posh_coral": 3,
+	"drab_chartreuse": 2,
+	"pale_silver": 2
+}
+
+faded_lavender =  {
+	"dim_lavender": 5,
+	"dim_turquoise": 1,
+	"vibrant_magenta": 1
+}
+
+dim_coral =  {
+	"faded_teal": 3,
+	"faded_indigo": 3
+}
+
+striped_maroon =  {
+	"shiny_aqua": 1,
+	"vibrant_magenta": 3,
+	"light_maroon": 5,
+	"dull_aqua": 2
+}
+
+striped_plum =  {
+	"dotted_brown": 1,
+	"wavy_green": 3,
+	"mirrored_tomato": 2
+}
+
+drab_lime =  {
+	"wavy_teal": 2,
+	"dim_maroon": 3,
+	"dark_cyan": 1
+}
+
+muted_coral =  {
+	"dim_maroon": 4,
+	"drab_lavender": 5,
+	"drab_purple": 5
+}
+
+drab_white =  {
+	"shiny_cyan": 3,
+	"wavy_aqua": 5,
+	"faded_maroon": 5
+}
+
+dotted_teal =  {
+	"muted_indigo": 3
+}
+
+plaid_coral =  {
+	"dotted_aqua": 4,
+	"wavy_salmon": 4,
+	"dim_maroon": 2
+}
+
+bright_salmon =  {
+	"dark_cyan": 5
+}
+
+shiny_blue =  {
+	"posh_lime": 1
+}
+
+plaid_red =  {
+	"dim_maroon": 1,
+	"faded_crimson": 4,
+	"muted_plum": 2
+}
+
+dull_olive =  {
+	"faded_plum": 2,
+	"striped_white": 4,
+	"wavy_indigo": 4
+}
+
+shiny_purple =  {
+	"drab_coral": 2,
+	"pale_blue": 5
+}
+
+striped_olive =  {
+	"vibrant_orange": 2,
+	"dim_red": 5,
+	"dim_cyan": 1,
+	"mirrored_cyan": 3
+}
+
+dull_magenta =  {
+	"vibrant_yellow": 2
+}
+
+dull_tan =  {
+	"mirrored_green": 2,
+	"muted_yellow": 5,
+	"faded_turquoise": 4
+}
+
+vibrant_plum =  {
+	"shiny_olive": 3,
+	"dim_indigo": 1
+}
+
+mirrored_black =  {
+	"posh_black": 3,
+	"vibrant_tan": 4,
+	"vibrant_black": 1,
+	"posh_orange": 2
+}
+
+shiny_black =  {
+	"muted_white": 3,
+	"dim_maroon": 1,
+	"dull_salmon": 2
+}
+
+clear_red =  {
+	"muted_gray": 4
+}
+
+striped_cyan =  {
+	"posh_chartreuse": 4,
+	"dull_brown": 4,
+	"posh_tomato": 2,
+	"dark_crimson": 3
+}
+
+faded_violet =  {
+	"drab_chartreuse": 1,
+	"dim_turquoise": 1,
+	"mirrored_olive": 2,
+	"clear_tan": 2
+}
+
+muted_beige =  {
+	"bright_silver": 2,
+	"bright_gold": 5,
+	"pale_brown": 4,
+	"bright_bronze": 2
+}
+
+pale_black =  {
+	"vibrant_green": 5,
+	"dark_coral": 3
+}
+
+vibrant_purple =  {
+	"dark_brown": 4,
+	"clear_violet": 3,
+	"wavy_black": 1,
+	"faded_fuchsia": 2
+}
+
+dark_fuchsia =  {
+	"wavy_salmon": 1
+}
+
+dark_aqua =  {
+	"vibrant_aqua": 5,
+	"dull_blue": 5
+}
+
+pale_coral =  {
+	"mirrored_olive": 3,
+	"faded_blue": 5,
+	"dim_beige": 3
+}
+
+striped_coral =  {
+	"shiny_fuchsia": 4,
+	"plaid_brown": 1,
+	"bright_turquoise": 2,
+	"vibrant_blue": 1
+}
+
+pale_turquoise =  {
+	"dull_green": 3,
+	"dim_red": 1
+}
+
+pale_teal =  {
+	"mirrored_green": 3,
+	"faded_violet": 1,
+	"vibrant_green": 3
+}
+
+wavy_beige =  {
+	"bright_tomato": 1,
+	"dull_olive": 2,
+	"dotted_violet": 3
+}
+
+dark_orange =  {
+	"posh_salmon": 2,
+	"clear_bronze": 1
+}
+
+shiny_tomato =  {
+	"drab_orange": 5,
+	"dull_crimson": 3,
+	"clear_tan": 4,
+	"faded_blue": 5
+}
+
+mirrored_fuchsia =  {
+	"bright_maroon": 2,
+	"dim_beige": 2,
+	"muted_gold": 3,
+	"striped_brown": 4
+}
+
+clear_coral =  {
+	"dim_brown": 5,
+	"drab_lavender": 1,
+	"dull_lime": 3
+}
+
+clear_white =  {
+	"clear_violet": 2,
+	"dull_beige": 5,
+	"vibrant_aqua": 3,
+	"dull_blue": 4
+}
+
+dull_maroon =  {
+	"dim_salmon": 5,
+	"dim_silver": 4,
+	"dark_magenta": 3
+}
+
+drab_silver =  {
+	"faded_blue": 5,
+	"wavy_chartreuse": 5,
+	"dull_crimson": 5,
+	"muted_yellow": 5
+}
+
+faded_salmon =  {
+	"wavy_olive": 4,
+	"mirrored_salmon": 3,
+	"plaid_violet": 1
+}
+
+drab_salmon =  {
+	"dull_magenta": 4,
+	"muted_teal": 5
+}
+
+light_yellow =  {
+	"pale_coral": 1,
+	"dim_turquoise": 4,
+	"mirrored_maroon": 4
+}
+
+plaid_crimson =  {
+	"dark_violet": 3,
+	"dull_gray": 2
+}
+
+dark_tomato =  {
+	"posh_teal": 1,
+	"posh_lavender": 1,
+	"dim_cyan": 5,
+	"light_yellow": 4
+}
+
+dim_chartreuse =  {
+	"muted_plum": 5,
+	"vibrant_aqua": 4
+}
+
+mirrored_white =  {
+	"dull_gold": 5,
+	"muted_lavender": 5,
+	"dull_crimson": 2
+}
+
+dotted_blue =  {
+	"muted_orange": 3
+}
+
+mirrored_olive =  {
+	"posh_crimson": 5,
+	"faded_blue": 3
+}
+
+dim_maroon =  {
+	"wavy_aqua": 5,
+	"faded_violet": 5,
+	"dull_crimson": 2,
+	"posh_lavender": 2
+}
+
+shiny_indigo =  {
+	"dull_lavender": 5,
+	"light_white": 1
+}
+
+wavy_chartreuse =  {
+	"mirrored_white": 3,
+	"drab_chartreuse": 2,
+	"muted_orange": 5,
+	"dull_crimson": 4
+}
+
+striped_orange =  {
+	"shiny_salmon": 4
+}
+
+dull_green =  {
+	"muted_gray": 4,
+	"drab_gray": 4,
+	"clear_yellow": 3
+}
+
+pale_orange =  {
+	"posh_turquoise": 5,
+	"light_beige": 3,
+	"bright_aqua": 3,
+	"dim_bronze": 5
+}
+
+dim_tomato =  {
+	"bright_brown": 3
+}
+
+dull_bronze =  {
+	"bright_plum": 1,
+	"wavy_red": 3,
+	"drab_silver": 2
+}
+
+wavy_blue =  {
+	"dull_crimson": 3,
+	"light_blue": 4
+}
+
+clear_blue =  {
+	"dim_gold": 1,
+	"dark_crimson": 4,
+	"light_gray": 2,
+	"muted_olive": 4
+}
+
+clear_turquoise =  {
+	"muted_lime": 1,
+	"faded_turquoise": 2,
+	"plaid_lavender": 4
+}
+
+dark_brown =  {
+	"dull_gold": 3,
+	"bright_cyan": 5,
+	"dull_brown": 2,
+	"dark_aqua": 3
+}
+
+plaid_lime =  {
+	"dotted_purple": 3,
+	"plaid_blue": 1,
+	"bright_silver": 3,
+	"vibrant_chartreuse": 1
+}
+
+mirrored_coral =  {
+	"plaid_olive": 2
+}
+
+vibrant_fuchsia =  {
+	"light_indigo": 3
+}
+
+dim_beige =  {
+	"muted_lavender": 1,
+	"light_blue": 3
+}
+
+wavy_orange =  {
+	"dotted_teal": 5,
+	"dull_magenta": 3,
+	"clear_chartreuse": 4,
+	"shiny_violet": 5
+}
+
+vibrant_lavender =  {
+	"vibrant_orange": 3,
+	"dark_aqua": 1
+}
+
+mirrored_aqua =  {
+	"drab_blue": 4
+}
+
+faded_gray =  {
+	"wavy_blue": 1,
+	"vibrant_yellow": 2,
+	"light_magenta": 1
+}
+
+dark_green =  {
+	"wavy_red": 2
+}
+
+dark_red =  {
+	"drab_magenta": 5,
+	"bright_lime": 3
+}
+
+dark_salmon =  {
+	"striped_indigo": 2,
+	"wavy_lavender": 5,
+	"dim_fuchsia": 1,
+	"dim_yellow": 5
+}
+
+wavy_lime =  {
+	"striped_plum": 2,
+	"faded_brown": 3
+}
+
+muted_violet =  {
+	"faded_tomato": 1
+}
+
+faded_bronze =  {
+	"dim_gray": 2,
+	"muted_gray": 3
+}
+
+vibrant_beige =  {
+	"striped_brown": 5,
+	"dull_lime": 5
+}
+
+dotted_coral =  {
+	"shiny_brown": 4,
+	"bright_silver": 1,
+	"clear_yellow": 2
+}
+
+plaid_maroon =  {
+	"shiny_magenta": 3,
+	"faded_tomato": 3
+}
+
+dim_olive =  {
+	"light_brown": 3
+}
+
+pale_plum =  {
+	"pale_tan": 4,
+	"drab_silver": 1,
+	"dim_beige": 3
+}
+
+vibrant_chartreuse =  {
+	"mirrored_white": 4,
+	"muted_orange": 2,
+	"posh_magenta": 2
+}
+
+faded_indigo =  {
+	"bright_brown": 3,
+	"dim_tomato": 3
+}
+
+posh_gold =  {
+	"dark_silver": 3,
+	"mirrored_gray": 4,
+	"dark_salmon": 4,
+	"dim_white": 1
+}
+
+light_lavender =  {
+	"dark_cyan": 2
+}
+
+plaid_salmon =  {
+	"dotted_green": 2,
+	"shiny_indigo": 4,
+	"bright_brown": 5
+}
+
+wavy_white =  {
+	"dim_lavender": 2,
+	"faded_teal": 3,
+	"dull_tan": 2,
+	"drab_orange": 3
+}
+
+plaid_plum =  {
+	"vibrant_yellow": 1
+}
+
+posh_tan =  {
+	"dull_orange": 2,
+	"pale_violet": 4,
+	"shiny_brown": 2
+}
+
+light_red =  {
+	"dim_maroon": 4,
+	"faded_salmon": 4,
+	"plaid_purple": 5
+}
+
+dotted_beige =  {
+	"shiny_fuchsia": 2,
+	"faded_cyan": 3,
+	"mirrored_red": 5,
+	"drab_turquoise": 3
+}
+
+drab_purple =  {
+	"bright_cyan": 3,
+	"faded_bronze": 1,
+	"light_plum": 3,
+	"dull_fuchsia": 1
+}
+
+bright_brown =  {
+	"dotted_green": 2,
+	"clear_tan": 4,
+	"wavy_red": 3
+}

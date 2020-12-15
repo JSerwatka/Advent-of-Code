@@ -1,0 +1,47 @@
+bags_dict = {
+	"shiny_gold": {"dark_red": 2},
+	"dark_red": {"dark_orange": 2},
+	"dark_orange": {"dark_yellow": 2},
+	"dark_yellow": {"dark_green": 2},
+	"dark_green": {"dark_blue": 2},
+	"dark_blue": {"dark_violet": 2},
+	"dark_violet": {"no_other": 0}
+}
+def how_many_bags(current_val="shiny_gold", equation=equation):
+    equation = ""
+    counter = 0
+    for key, value in bags_dict[current_val].items():
+        counter += 1
+        if "no_other" not in bags_dict[key].keys():
+            equation += f"{value}*(1 + {how_many_bags(key, equation)})"
+        else:
+            if counter == len(bags_dict[current_val].items()):
+                equation += f"{value}*1"
+            else:
+                equation += f"{value}*1 + "
+        if current_val == "shiny_gold" and counter < len(bags_dict[current_val].items()):
+            equation += " + "
+    return equation
+
+
+print(how_many_bags())
+
+
+
+//2
+
+
+equation = 0
+
+def how_many_bags(current_val="shiny_gold", equation=equation):
+    for key, value in bags_dict[current_val].items():
+        if "no_other" not in bags_dict[key].keys():
+            equation += value * (1 + how_many_bags(key, equation))
+        else:
+            equation += value
+        # if current_val == "shiny_gold":
+            # equation += " + "
+    return equation
+
+
+print(how_many_bags())

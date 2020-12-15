@@ -1,0 +1,9 @@
+light_red: bright_white, muted_yellow
+dark_orange: bright_white, muted_yellow
+bright_white: shiny_gold
+muted_yellow: shiny_gold, faded_blue
+shiny_gold: dark_olive, vibrant_plum
+dark_olive: faded_blue, dotted_black
+vibrant_plum: faded_blue, dotted_black
+faded_blue: no_other
+dotted_black: no_other

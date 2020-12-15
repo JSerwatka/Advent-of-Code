@@ -1,0 +1,12 @@
+instructions = [
+    # instruction: step counter
+    ["nop", "+0", 0],
+    ["acc", "+1", 0],
+    ["jmp", "+4", 0],
+    ["acc", "+3", 0],
+    ["jmp", "-3", 0],
+    ["acc", "-99", 0],
+    ["acc", "+1", 0],
+    ["jmp", "-4", 0],
+    ["acc", "+6", 0]
+]
