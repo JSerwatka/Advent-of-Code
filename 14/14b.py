@@ -609,10 +609,6 @@ def mask_memory(instructions):
     
     return new_memory
 
-# mask= mask_addres(42,"000000000000000000000000000000X1001X")
-# print(mask)
-# print(get_all_address_combinations(mask))
-
 result = mask_memory(instructions)
 
 total_sum = 0
