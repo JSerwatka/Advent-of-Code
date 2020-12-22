@@ -7,8 +7,20 @@ class Point:
     
     def __str__(self):
         return(f"P({self.x}, {self.y}, {self.z}): {self.state}")
+
+    def is_active(self):
+        if self.state == "#":
+            return True
+        else:
+            return False
+
+    def activate_point(self):
+        self.state = "#"
+
+    def deactivate_point(self):
+        self.state = "."
     
-    def generate_neighbor_window(self):
+    def __generate_neighbor_window(self):
         neighbor_idxs = [] 
         for x in [-1,0,1]:
             for y in [-1,0,1]:
@@ -18,8 +30,8 @@ class Point:
                     neighbor_idxs.append([x,y,z])
         return neighbor_idxs
     
-    def generate_neighbor_points(self):
-        neighbor_window = self.generate_neighbor_window()
+    def __generate_neighbor_points(self):
+        neighbor_window = self.__generate_neighbor_window()
         neighbor_points = []
 
         for idx in neighbor_window:
@@ -29,13 +41,21 @@ class Point:
         return neighbor_points 
 
     def count_neighbors(self, other_list):
-        neighbor_points = self.generate_neighbor_points()
-        count = 0
+        neighbor_points = self.__generate_neighbor_points()
+        neighbor_count = 0
 
         for other in other_list:
             if [other.x, other.y, other.z] in neighbor_points and other.state == "#":
-                count += 1
-        return count
+                neighbor_count += 1
+        return neighbor_count
+
+    def apply_rules(self, other_list):
+        neighbor_count = self.count_neighbors(other_list)
+
+        if self.is_active() and neighbor_count not in [2, 3]:
+            self.deactivate_point()
+        elif (not self.is_active()) and neighbor_count == 3:
+            self.activate_point()
 
 
 # point = Point(1, 1, 0, ".")
@@ -53,6 +73,9 @@ arr_of_points = [
     Point(2, 2, 0, ".")
 ]
 
-my_point = arr_of_points.pop(1)
+my_point = arr_of_points.pop(3)
+print(my_point.is_active())
+my_point.activate_point()
+print(my_point.is_active())
 
-print(my_point.count_neighbors(arr_of_points))
+# print(my_point.count_neighbors(arr_of_points))
