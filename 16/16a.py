@@ -263,7 +263,7 @@ tickets = [[235,447,575,80,384,832,799,806,529,624,144,398,176,583,199,169,914,2
            [327,727,426,729,331,446,372,679,534,899,727,734,335,117,935,923,551,545,627,503]]
 
 def compare_rule_number(rules, number):
-    return rules[0][0] < number <= rules[0][1] or rules[1][0] < number <= rules[1][1]
+    return rules[0][0] <= number <= rules[0][1] or rules[1][0] <= number <= rules[1][1]
 
 def find_error_rate(my_dict, tickets):
     error_rate = 0

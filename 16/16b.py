@@ -7,6 +7,7 @@
 #           [55,2,20],
 #           [38,6,12]]
 
+# 20 rules 
 rules = {"departure location": [[47,691], [713,954]],
          "departure station": [[44,776], [799,969]],
          "departure platform": [[37,603], [627,953]],
@@ -273,7 +274,7 @@ tickets = [[235,447,575,80,384,832,799,806,529,624,144,398,176,583,199,169,914,2
 
 
 def compare_rule_number(rules, number):
-    return rules[0][0] < number <= rules[0][1] or rules[1][0] < number <= rules[1][1]
+    return rules[0][0] <= number <= rules[0][1] or rules[1][0] <= number <= rules[1][1]
 
 def find_invalid_values(rules, tickets):
     invalid_values = []
@@ -313,26 +314,32 @@ def find_columns_rules(rules, valid_tickets):
                     column_valid_rules[idx] = [key]
                 else:
                     column_valid_rules[idx].append(key)
+                # if key not in column_valid_rules:
+                #     column_valid_rules[key] = [idx]
+                # else:
+                #     column_valid_rules[key].append(idx)
     return column_valid_rules
 
 valid_tickets = exlude_invalid_tickets(rules, tickets)
 columns_rules = find_columns_rules(rules, valid_tickets)
 
-# print(columns_rules)
-# column_rule_dict = dict([])
-# while len(column_rule_dict) < (len(rules)-1):
-#     for key, value in columns_rules.items():
-#         if len(value) == 1:
-#             value = value[0]
-#             column_rule_dict[value] = key
-#             for second_key, _ in columns_rules.items():
-#                 try:
-#                     columns_rules[second_key].remove(value)
-#                 except:
-#                     pass
-#             break
-#         # if len(value) == 1 and key not in column_rule_dict:
-#         #     column_rule_dict(value) = key
-#         #     for second_key, second_value in columns_rules.items():
-#         #         if key == 
-# print(column_rule_dict)
+print(columns_rules)
+print(len(columns_rules))
+column_rule_dict = dict([])
+while len(column_rule_dict) < (len(rules)-1):
+    for key, value in columns_rules.items():
+        if len(value) == 1:
+            value = value[0]
+            column_rule_dict[value] = key
+            for second_key, _ in columns_rules.items():
+                try:
+                    columns_rules[second_key].remove(value)
+                except:
+                    pass
+            break
+return column_rule_dict
+        # if len(value) == 1 and key not in column_rule_dict:
+        #     column_rule_dict(value) = key
+        #     for second_key, second_value in columns_rules.items():
+        #         if key == 
+print(column_rule_dict)
