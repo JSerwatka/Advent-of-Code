@@ -272,11 +272,14 @@ tickets = [[235,447,575,80,384,832,799,806,529,624,144,398,176,583,199,169,914,2
            [139,532,360,184,436,415,503,423,388,316,989,910,644,180,362,669,641,571,810,238],
            [327,727,426,729,331,446,372,679,534,899,727,734,335,117,935,923,551,545,627,503]]
 
+my_ticket = [191,139,59,79,149,83,67,73,167,181,173,61,53,137,71,163,179,193,107,197]
 
 def compare_rule_number(rules, number):
+    ''' Check a number against a single min/max rule '''
     return rules[0][0] <= number <= rules[0][1] or rules[1][0] <= number <= rules[1][1]
 
 def find_invalid_values(rules, tickets):
+    ''' Find values that don't conform to any rule '''
     invalid_values = []
     for ticket in tickets:
         for number in ticket:
@@ -290,6 +293,7 @@ def find_invalid_values(rules, tickets):
     return set(invalid_values)
 
 def exlude_invalid_tickets(rules, tickets):
+    ''' Discard tickets that were marked as invalid (don't conform to the rules) '''
     valid_tickets = []
     invalid_values = find_invalid_values(rules, tickets)
 
@@ -300,6 +304,7 @@ def exlude_invalid_tickets(rules, tickets):
     return valid_tickets
 
 def find_columns_rules(rules, valid_tickets):
+    ''' Find all rules that are valid for given column in valid tickets '''
     column_valid_rules = dict([])
 
     for key, value in rules.items():
@@ -320,26 +325,30 @@ def find_columns_rules(rules, valid_tickets):
                 #     column_valid_rules[key].append(idx)
     return column_valid_rules
 
-valid_tickets = exlude_invalid_tickets(rules, tickets)
-columns_rules = find_columns_rules(rules, valid_tickets)
+def find_column_rule_dict(rules, columns_rules):
+    column_rule_dict = dict([])
+    while len(column_rule_dict) < len(rules):
+        for key, value in columns_rules.items():
+            if len(value) == 1:
+                value = value[0]
+                column_rule_dict[value] = key
+                for second_key, _ in columns_rules.items():
+                    try:
+                        columns_rules[second_key].remove(value)
+                    except:
+                        pass
+                break
+    return column_rule_dict
 
-print(columns_rules)
-print(len(columns_rules))
-column_rule_dict = dict([])
-while len(column_rule_dict) < (len(rules)-1):
-    for key, value in columns_rules.items():
-        if len(value) == 1:
-            value = value[0]
-            column_rule_dict[value] = key
-            for second_key, _ in columns_rules.items():
-                try:
-                    columns_rules[second_key].remove(value)
-                except:
-                    pass
-            break
-return column_rule_dict
-        # if len(value) == 1 and key not in column_rule_dict:
-        #     column_rule_dict(value) = key
-        #     for second_key, second_value in columns_rules.items():
-        #         if key == 
-print(column_rule_dict)
+def calculate_departure(column_rule_dict, my_ticket):
+    result = 1
+    for key, value in column_rule_dict.items():
+        if key.startswith("departure"):
+            result *= my_ticket[value]
+    return result
+
+if __name__ == "__main__":
+    valid_tickets = exlude_invalid_tickets(rules, tickets)
+    columns_rules = find_columns_rules(rules, valid_tickets)
+    column_rule_dict = find_column_rule_dict(rules, columns_rules)
+    print(calculate_departure(column_rule_dict, my_ticket))
