@@ -1,6 +1,6 @@
-# 0.111113 e^(1.89517 x) time est (6 cycles = 13142s)
 import copy
 import itertools
+import concurrent.futures
 
 class Point:
     def __init__(self, x, y, z, w, state):
@@ -32,27 +32,6 @@ class Point:
     def __deactivate_point(self):
         self.state = "."
         
-    # old version - for debug only
-    # def __generate_neighbor_window(self):
-    #     neighbor_idxs = [] 
-    #     for x in [-1,0,1]:
-    #         for y in [-1,0,1]:
-    #             for z in [-1,0,1]:
-    #                 for w in [-1,0,1]:
-    #                     if x == 0 and y == 0 and z == 0 and w == 0:
-    #                         continue
-    #                     neighbor_idxs.append([x,y,z,w])
-    #     return neighbor_idxs
-    
-    # def __generate_neighbor_points(self):
-    #     neighbor_window = self.__generate_neighbor_window()
-    #     neighbor_points = []
-
-    #     for idx in neighbor_window:
-    #         neighbor_points.append(
-    #             [self.x + idx[0], self.y + idx[1], self.z + idx[2], self.w + idx[3]]
-    #         )
-    #     return neighbor_points 
     def __generate_neighbor_points(self):
         neighbor_points = []
 
@@ -114,20 +93,35 @@ def generate_new_cube(list_of_points):
                         list_of_new_points.append(new_point)
     return list_of_points + list_of_new_points
 
-def cube_after_n_cycles(n, list_of_points):
-    for i in range(n):
-        if i == 0:
-            new_cube = generate_new_cube(list_of_points)
-        else:
-            new_cube = generate_new_cube(new_list_of_points)
-        new_list_of_points = []
-        for i in range(len(new_cube)):
-            new_point = new_cube.pop(i)
-            old_point = copy.deepcopy(new_point)
-            new_point.apply_rules(new_cube)
-            new_list_of_points.append(new_point)
-            new_cube.insert(i, old_point)
+def alter_points(cube, ranges):
+    new_list_of_points = []
+    for i in range(ranges[0], ranges[1]):
+        new_point = cube.pop(i)
+        old_point = copy.deepcopy(new_point)
+        new_point.apply_rules(cube)
+        new_list_of_points.append(new_point)
+        cube.insert(i, old_point)
     return new_list_of_points
+
+def cube_after_n_cycles(n, list_of_points):
+    nb_of_cores = 8-1
+    new_list_of_points = list_of_points
+    for i in range(n):
+        new_cube = generate_new_cube(new_list_of_points)
+        new_list_of_points = []
+        cube_len = len(new_cube)
+        nb_of_ranges = cube_len//nb_of_cores
+        ranges_min = [x for x in range(0, cube_len, nb_of_ranges)]
+        ranges_max = [y for y in range(nb_of_ranges, cube_len, nb_of_ranges)]
+        ranges_max.append(cube_len)
+        with concurrent.futures.ProcessPoolExecutor() as executor:
+            ranges = list(zip(ranges_min, ranges_max))
+            results = executor.map(alter_points, itertools.repeat(new_cube), ranges)
+
+            for result in results:
+                new_list_of_points += result
+    return new_list_of_points
+
 
 def calculate_active(list_of_points):
     counter = 0
@@ -137,7 +131,7 @@ def calculate_active(list_of_points):
     return counter
 
 
-
-list_of_points = generate_points_from_input()
-new_cube = cube_after_n_cycles(6, list_of_points)
-print(calculate_active(new_cube))
+if __name__ == "__main__":
+    list_of_points = generate_points_from_input()
+    new_cube = cube_after_n_cycles(6, list_of_points)
+    print(calculate_active(new_cube))

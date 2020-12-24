@@ -1,4 +1,5 @@
 import copy
+import itertools
 # from mpl_toolkits.mplot3d import Axes3D
 # import matplotlib.pyplot as plt
 # visualization_input: https://www.math3d.org/Q6ZMfqPR
@@ -32,21 +33,33 @@ class Point:
     def __deactivate_point(self):
         self.state = "."
     
-    def __generate_neighbor_window(self):
-        neighbor_idxs = [] 
-        for x in [-1,0,1]:
-            for y in [-1,0,1]:
-                for z in [-1,0,1]:
-                    if x == 0 and y == 0 and z == 0:
-                        continue
-                    neighbor_idxs.append([x,y,z])
-        return neighbor_idxs
+    # old version - for debug only
+    # def __generate_neighbor_window(self):
+    #     neighbor_idxs = [] 
+    #     for x in [-1,0,1]:
+    #         for y in [-1,0,1]:
+    #             for z in [-1,0,1]:
+    #                 if x == 0 and y == 0 and z == 0:
+    #                     continue
+    #                 neighbor_idxs.append([x,y,z])
+    #     return neighbor_idxs
+
+    # def __generate_neighbor_points(self):
+    #     neighbor_window = self.__generate_neighbor_window()
+    #     neighbor_points = []
+
+    #     for idx in neighbor_window:
+    #         neighbor_points.append(
+    #             [self.x + idx[0], self.y + idx[1], self.z + idx[2]]
+    #         )
+    #     return neighbor_points 
     
     def __generate_neighbor_points(self):
-        neighbor_window = self.__generate_neighbor_window()
         neighbor_points = []
 
-        for idx in neighbor_window:
+        for idx in itertools.product([-1,0,1], repeat=3):
+            if idx[0] == 0 and idx[1] == 0 and idx[2] == 0:
+                continue
             neighbor_points.append(
                 [self.x + idx[0], self.y + idx[1], self.z + idx[2]]
             )
@@ -101,11 +114,9 @@ def generate_new_cube(list_of_points):
     return list_of_points + list_of_new_points
 
 def cube_after_n_cycles(n, list_of_points):
+    new_list_of_points = list_of_points
     for i in range(n):
-        if i == 0:
-            new_cube = generate_new_cube(list_of_points)
-        else:
-            new_cube = generate_new_cube(new_list_of_points)
+        new_cube = generate_new_cube(new_list_of_points)
         new_list_of_points = []
         for i in range(len(new_cube)):
             new_point = new_cube.pop(i)
