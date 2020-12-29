@@ -177,10 +177,8 @@ def generate_regex(rules):
     empty_r = r"^([ab\|\)\(\s])*$$"
     rules[8] = '| '.join(['42 '*i for i in range(1, 10)])
     rules[11] = '| '.join(['42 '*i + '31 '*i for i in range(1, 10)])
-    new_rules = dict([(42, "123"), (31, "13")])
 
     while len(rules) > 1:
-    # while not (re.fullmatch(empty_r,new_rules[42]) and re.fullmatch(empty_r,new_rules[31])):
         for key, value in rules.items():
             match = re.fullmatch(empty_r, value)
             if match:
@@ -189,28 +187,24 @@ def generate_regex(rules):
                     pattern = re.compile(f"(?<!\d){key}(?!\d)")
                     value_2 = re.sub(pattern, f"({value})", value_2)
                     rules[key_2] = value_2
-                new_rules[key] = value
                 del rules[key]
                 break
     rules[0] = rules[0].replace(" ", "")
     rules[0] = f"^{rules[0]}$"
     return rules
-    # return rules
 
-def find_matches(my_rule):
+def find_matches(rules):
     counter = 0
 
-    with open("input_test.txt") as f:
+    with open("input.txt") as f:
         read_data = []
         for line in f:
             line = line.rstrip('\n')
-            if re.fullmatch(my_rule, line):
-                print(line)
+            if re.fullmatch(rules[0], line):
                 counter += 1
     
     return counter  
 
-new_rules = generate_regex(test)
-print(new_rules)
-# matched = find_matches(my_rule_str)
-# print(matched)
+rule_0 = generate_regex(rules)
+matched = find_matches(rule_0)
+print(matched)
