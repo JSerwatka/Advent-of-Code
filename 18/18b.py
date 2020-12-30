@@ -25,8 +25,10 @@ def generate_new_equation(equation):
             elif addition and after_group:
                 previous_group_after = f"({previous_group} + {element})"
                 new_equ = new_equ[:-(len(previous_group)+3)] + previous_group_after
+                previous_group = previous_group_after
+                continue
             else:
-                # new_equ = "(" + new_equ + element + ")"
+                # new_equ = new_equ + "(" + element + ")"
                 new_equ = new_equ + element
             previous_value = element
             after_group = False
@@ -36,12 +38,17 @@ def generate_new_equation(equation):
             if addition and not after_group:
                 previous_group = f"({previous_value} + ({return_value[0]}))"
                 new_equ = f"{new_equ[:-4]}{previous_group}"
+                after_group = True
                 continue
             elif addition and after_group:
                 previous_group_after = f"({previous_group} + {return_value[0]})"
                 new_equ = new_equ[:-(len(previous_group)+3)] + previous_group_after
+                # previous_group = f"({return_value[0]})"
+                # after_group = True
+                # continue
             else:
                 new_equ = new_equ + "(" + return_value[0] + ")"
+            previous_group = f"({return_value[0]})"
             after_group = True
         elif element == ")":
             return [new_equ, idx]
@@ -53,13 +60,14 @@ def sum_all_equations():
     with open("input.txt") as f:
         for line in f:
             line = line.rstrip('\n')
+            print(line)
             new_val = eval(generate_new_equation(line))
             result += new_val
 
     return result
 
 # print(sum_all_equations())
-test = "((2 + 4 * 9) * (6 + 9 * 8 + 6) + 6) + 2 + 4 * 2"
+test = "(7 * 6 * 3 + 4 * 3 * 9) + (6 * 6 * (4 + 6 + 4) + 7 + 2 + (9 * 8 * 9 + 9 * 7 * 4)) + (3 * 4 + 3 + 2) * 8"
 val = generate_new_equation(test)
 print(val)
 print(eval(val))
