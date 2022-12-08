@@ -25,6 +25,14 @@ class Node:
         for child_folder in self.children.values():
             sum_of_files_sizes += int(child_folder.calculate_size())
         return sum_of_files_sizes
+    
+    def find_children_smaller_than(self, size, small_folders=[]):       
+        for child_folder in self.children.values():
+            folder_size = int(child_folder.calculate_size())
+            if folder_size < size:
+                small_folders.append(folder_size)
+            child_folder.find_children_smaller_than(size, small_folders)
+        return small_folders
         
 current_node = Node(None)
 level = 1
@@ -73,6 +81,5 @@ def main(input_file):
         for command in f:
             command_parser(command)
 
-main("../input_test.txt")
+main("../input.txt")
 print(root_ref)
-# print(root_ref.calculate_size())
