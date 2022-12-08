@@ -1,3 +1,6 @@
+from functools import reduce
+
+
 class Node:
     def __init__(self, parent):
         self.values = {}
@@ -8,12 +11,20 @@ class Node:
     def __str__(self):
         folder_structure = ""
         tabs = self.level * 4 * " "
+        folder_structure = f"{tabs}folder file size: {self.calculate_size()}\n"
         for file_name, file_size in self.values.items():
             folder_structure += f"{tabs}{file_name} ({file_size})\n"
         for folder_name, folder_node in self.children.items():
             folder_structure += f"{tabs}{folder_name}\n"
             folder_structure += str(folder_node)
-        return folder_structure        
+        
+        return folder_structure
+
+    def calculate_size(self):
+        sum_of_files_sizes = reduce(lambda x, y: int(x) + int(y), self.values.values())
+        for child_folder in self.children.values():
+            sum_of_files_sizes += int(child_folder.calculate_size())
+        return sum_of_files_sizes
         
 current_node = Node(None)
 level = 0
@@ -64,3 +75,4 @@ def main(input_file):
 
 main("../input_test.txt")
 print(root_ref)
+# print(root_ref.calculate_size())
