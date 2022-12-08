@@ -5,51 +5,40 @@ class Node:
         self.parent = parent
         self.level = 0
 
-
-class Tree:
-    def __init__(self):
-        self.root = Node(None)
-        self.currentNode = self.root
-    
     def __str__(self):
-        traverseNode = self.root
-
-        if traverseNode.parent is None:
-            print("/")
-        else:
-            traverseNode(traverseNode)
-            
-    def traverse(self, currentNode):
-        # Jeśli nie ma już dzieci - wypisz tylko pliki i idź wyżej
-        if len(currentNode.children) == 0:
-            [print(f"{file_name} (file, size: {file_size}" for file_name, file_size in currentNode.values.items())]
-            self.traverse(currentNode.parent)
-        # Jeśli ma dzieci - wypisz je i wejdź do następneg (jeśli index != 0 - nie wypisuje, jeśli index większy niż ilość dzieci, idź wyżej)
-        else:
-            [print(f"{file_name} (file, size: {file_size}" for file_name, file_size in currentNode.values.items())]
-            [print(f"{dir_name} (dir)") for dir_name in currentNode.children.keys()]
+        folder_structure = ""
+        tabs = self.level * 4 * " "
+        for file_name, file_size in self.values.items():
+            folder_structure += f"{tabs}{file_name} ({file_size})\n"
+        for folder_name, folder_node in self.children.items():
+            folder_structure += f"{tabs}{folder_name}\n"
+            folder_structure += str(folder_node)
+        return folder_structure        
         
-        
-        
-file_tree = Tree()
-        
+current_node = Node(None)
+level = 0
+root_ref = current_node
         
 def handle_dir_change(destination):
+    global current_node
+    global level
     match destination:
         case "/":
             return
         case "..":
-            file_tree.currentNode = file_tree.currentNode.parent
-            file_tree.currentNode.level -= 1
+            level -= 1
+            current_node = current_node.parent
+            current_node.level = level
         case _:
-            file_tree.currentNode = file_tree.currentNode.children[destination]
-            file_tree.currentNode.level += 1                
+            level += 1                
+            current_node = current_node.children[destination]
+            current_node.level = level
 
 def handle_new_dir(dir_name):
-    file_tree.currentNode.children.setdefault(dir_name, Node(file_tree.currentNode))
+    current_node.children.setdefault(dir_name, Node(current_node))
 
 def handle_new_file(file_name, file_size):
-    file_tree.currentNode.values.setdefault(file_name, file_size)
+    current_node.values.setdefault(file_name, file_size)
         
 def command_parser(command):
     elements = command.strip().split(" ")
@@ -74,5 +63,4 @@ def main(input_file):
             command_parser(command)
 
 main("../input_test.txt")
-print(file_tree)
-
+print(root_ref)
