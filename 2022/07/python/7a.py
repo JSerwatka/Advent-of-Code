@@ -9,13 +9,13 @@ class Node:
         self.level = 0
 
     def __str__(self):
-        folder_structure = ""
+        folder_structure = "\\"
         tabs = self.level * 4 * " "
-        folder_structure = f"{tabs}folder file size: {self.calculate_size()}\n"
+        folder_structure += f" - folder file size: {self.calculate_size()}\n"
         for file_name, file_size in self.values.items():
             folder_structure += f"{tabs}{file_name} ({file_size})\n"
         for folder_name, folder_node in self.children.items():
-            folder_structure += f"{tabs}{folder_name}\n"
+            folder_structure += f"{tabs}{folder_name}"
             folder_structure += str(folder_node)
         
         return folder_structure
@@ -27,7 +27,7 @@ class Node:
         return sum_of_files_sizes
         
 current_node = Node(None)
-level = 0
+level = 1
 root_ref = current_node
         
 def handle_dir_change(destination):
