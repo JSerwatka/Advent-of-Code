@@ -11,10 +11,7 @@ class Rope:
                 return value + 1
             return 0
 
-        for index in range(1, len(self.knots)):
-            if self.knots[0][0] == -131 and self.knots[0][1] == 99:
-                pass
-            
+        for index in range(1, len(self.knots)):           
             x_steps_needed = self.knots[index - 1][0] - self.knots[index][0]
             y_steps_needed = self.knots[index - 1][1] - self.knots[index][1]
                     
