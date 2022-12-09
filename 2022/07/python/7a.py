@@ -1,6 +1,3 @@
-from functools import reduce
-
-
 class Node:
     def __init__(self, parent):
         self.values = {}
@@ -33,53 +30,56 @@ class Node:
                 small_folders.append(folder_size)
             child_folder.find_children_smaller_than(size, small_folders)
         return small_folders
+    
+class FolderStructure:
+    def __init__(self):
+        self.level = 1
+        self.root = Node(None)
+        self.current_node = self.root
         
-current_node = Node(None)
-level = 1
-root_ref = current_node
+    def handle_dir_change(self, destination):
+        match destination:
+            case "/":
+                return
+            case "..":
+                self.level -= 1
+                self.current_node = self.current_node.parent
+                self.current_node.level = self.level
+            case _:
+                self.level += 1                
+                self.current_node = self.current_node.children[destination]
+                self.current_node.level = self.level
         
-def handle_dir_change(destination):
-    global current_node
-    global level
-    match destination:
-        case "/":
-            return
-        case "..":
-            level -= 1
-            current_node = current_node.parent
-            current_node.level = level
-        case _:
-            level += 1                
-            current_node = current_node.children[destination]
-            current_node.level = level
+    def handle_new_dir(self, dir_name):
+        self.current_node.children.setdefault(dir_name, Node(self.current_node))
 
-def handle_new_dir(dir_name):
-    current_node.children.setdefault(dir_name, Node(current_node))
-
-def handle_new_file(file_name, file_size):
-    current_node.values.setdefault(file_name, file_size)
+    def handle_new_file(self, file_name, file_size):
+        self.current_node.values.setdefault(file_name, file_size)
         
-def command_parser(command):
-    elements = command.strip().split(" ")
+    def command_parser(self, command):
+        elements = command.strip().split(" ")
 
-    if elements[0] == "$":
-        elements = elements[1:]
+        if elements[0] == "$":
+            elements = elements[1:]
 
-    match elements[0]:
-        case "ls":
-            return
-        case "cd":
-            handle_dir_change(elements[1])
-        case "dir":
-            handle_new_dir(elements[1])
-        case _:
-            handle_new_file(elements[1], elements[0])
+        match elements[0]:
+            case "ls":
+                return
+            case "cd":
+                self.handle_dir_change(elements[1])
+            case "dir":
+                self.handle_new_dir(elements[1])
+            case _:
+                self.handle_new_file(elements[1], elements[0])
+                
+    def __str__(self):
+        return str(self.root)
 
-
-def main(input_file):
+def main(input_file, folder_structure):
     with open(input_file) as f:
         for command in f:
-            command_parser(command)
+            folder_structure.command_parser(command)
 
-main("../input.txt")
-print(sum(root_ref.find_children_smaller_than(100000)))
+folder_structure = FolderStructure()
+main("../input_test.txt", folder_structure)
+print(sum(folder_structure.root.find_children_smaller_than(100000)))
