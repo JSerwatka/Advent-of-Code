@@ -34,8 +34,6 @@ class Rope:
             if index == (len(self.knots) - 1):
                 self.visited_places.add(tuple(self.knots[-1]))  
 
-         
-    
     def move_head(self, direction):
         head = self.knots[0]
         
