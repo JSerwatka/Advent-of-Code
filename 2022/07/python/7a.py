@@ -21,7 +21,7 @@ class Node:
         return folder_structure
 
     def calculate_size(self):
-        sum_of_files_sizes = reduce(lambda x, y: int(x) + int(y), self.values.values())
+        sum_of_files_sizes = sum(int(x) for x in self.values.values())
         for child_folder in self.children.values():
             sum_of_files_sizes += int(child_folder.calculate_size())
         return sum_of_files_sizes
@@ -82,4 +82,4 @@ def main(input_file):
             command_parser(command)
 
 main("../input.txt")
-print(root_ref)
+print(sum(root_ref.find_children_smaller_than(100000)))
