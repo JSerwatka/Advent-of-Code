@@ -13,15 +13,17 @@ class Rope:
         x_steps_needed = self.head[0] - self.tail[0]
         y_steps_needed = self.head[1] - self.tail[1]
         
-        # Needs adjustment
-        if not (abs(x_steps_needed) <= 1 and abs(y_steps_needed) <= 1):
-            if abs(x_steps_needed) > abs(y_steps_needed):
-                x_steps_needed = move_towards_zero(x_steps_needed)
-            else:
-                y_steps_needed = move_towards_zero(y_steps_needed)
-                
-            self.tail[0] += x_steps_needed
-            self.tail[1] += y_steps_needed
+        # Do not need adjustment
+        if abs(x_steps_needed) <= 1 and abs(y_steps_needed) <= 1:
+            return
+        
+        if abs(x_steps_needed) > abs(y_steps_needed):
+            x_steps_needed = move_towards_zero(x_steps_needed)
+        else:
+            y_steps_needed = move_towards_zero(y_steps_needed)
+            
+        self.tail[0] += x_steps_needed
+        self.tail[1] += y_steps_needed
 
         self.visited_places.add(tuple(self.tail))    
     
