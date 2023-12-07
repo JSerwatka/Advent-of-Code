@@ -27,7 +27,6 @@ def count_card_strenght(cards: str):
     card_with_highest_count = max(counted_cards, key=counted_cards.get)
     counted_cards[card_with_highest_count] += number_of_jokers
 
-    # print()
     match len(counted_cards):
         # Five of a kind
         case 1:
