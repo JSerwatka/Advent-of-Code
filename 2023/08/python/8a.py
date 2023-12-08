@@ -25,5 +25,6 @@ def main():
             else:
                 current_node_children = network[next_step]
                 steps += 1
+    return steps
         
 print(main())

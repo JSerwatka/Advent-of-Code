@@ -30,5 +30,6 @@ def main():
             else:
                 current_nodes_children = [network[node] for node in next_steps]
                 steps += 1
+    return steps
         
 print(main())
