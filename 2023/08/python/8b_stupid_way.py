@@ -17,9 +17,6 @@ def main():
         current_nodes_children = [network[node] for node in A_starting_nodes]
         steps = 0
         
-        
-        # print(current_node_children)        
-        
         # for direction in directions:
         for direction in cycle(directions):
             next_step_index = 0 if direction == "L" else 1
