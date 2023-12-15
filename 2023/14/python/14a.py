@@ -10,8 +10,8 @@ def main():
         platform_len = platform.shape[0]
         platform_tilted =  np.empty((platform_len, 0), dtype="S1")
 
-        for index in range(platform_len):
-            original_column = platform[:, index]
+        for line_index in range(platform_len):
+            original_column = platform[:, line_index]
             last_obstacle_index = -1
             for index, sing in enumerate(original_column):
                 match sing:
