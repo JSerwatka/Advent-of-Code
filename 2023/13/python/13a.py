@@ -1,5 +1,4 @@
 import numpy as np
-
 # Compare the first and second column
 # are_equal = np.array_equal(arr[:, 0], arr[:, 1])
 
@@ -24,9 +23,9 @@ def count_reflections(pattern, index, axis):
         except IndexError:
             return reflection_count
 
-def get_reflection_count(pattern):
-    best_column_reflection_count = 0
-    best_row_reflection_count = 0
+def get_best_reflection_index(pattern):
+    best_column_reflection = {"index": 0, "count": 0}
+    best_row_reflection = {"index": 0, "count": 0}
     
     # test column reflections
     for index in range(pattern.shape[1] - 1):
@@ -34,7 +33,9 @@ def get_reflection_count(pattern):
         
         if equal_columns:
             reflections_count = count_reflections(pattern, index, "column")
-            best_column_reflection_count = best_column_reflection_count if best_column_reflection_count > reflections_count else reflections_count
+            if reflections_count > best_column_reflection["count"]:
+                best_column_reflection["count"] = reflections_count
+                best_column_reflection["index"] = index
     
     # test row reflections
     for index in range(pattern.shape[0] - 1):
@@ -42,23 +43,37 @@ def get_reflection_count(pattern):
         
         if equal_row:
             reflections_count = count_reflections(pattern, index, "row")
-            best_row_reflection_count = best_row_reflection_count if best_row_reflection_count > reflections_count else reflections_count
+            
+            if reflections_count > best_row_reflection["count"]:
+                best_row_reflection["count"] = reflections_count
+                best_row_reflection["index"] = index
 
-    return  best_column_reflection_count if best_column_reflection_count > best_row_reflection_count else best_row_reflection_count
+    if best_column_reflection["count"] > best_row_reflection["count"]:
+        return { "index": best_column_reflection["index"], "type": "column"}
+    return { "index": best_row_reflection["index"], "type": "row"}
+
+def calculate_pattern_value(pattern):
+    best_reflection = get_best_reflection_index(pattern)
+    
+    if best_reflection["type"] == "row":
+        return (best_reflection["index"] + 1) * 100
+    return best_reflection["index"] + 1
     
 def main():
+    total = 0
+
     # with open("../input.txt") as f:
     with open("../input_example.txt") as f:
         pattern = None
         for line in f:
             if line == "\n":
-                print(get_reflection_count(pattern))
+                total += calculate_pattern_value(pattern)
                 pattern = None
             else:
                 line_mapped = [0 if sing == "." else 1 for sing in line.strip()]
                 if pattern is None:
                     pattern = np.empty((0, len(line_mapped)))
                 pattern = np.append(pattern, [line_mapped], axis=0)
-        # get_pattern_summary(pattern)
-
+        total += calculate_pattern_value(pattern)
+    return total
 print(main())
