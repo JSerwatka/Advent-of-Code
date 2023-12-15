@@ -1,69 +1,56 @@
 import numpy as np
-# Compare the first and second column
-# are_equal = np.array_equal(arr[:, 0], arr[:, 1])
 
-def count_reflections(pattern, index, axis):
-    reflection_count = 1
+def check_is_reflection(pattern, index, size, axis):
     index_offset_left = -1
     index_offset_right = 2
-    
-    while True:
-        try:
-            col_row = pattern[index + index_offset_left, :] if axis == "row" else pattern[:, index + index_offset_left]
-            next_col_row = pattern[index + index_offset_right, :] if axis == "row" else pattern[:, index + index_offset_right]
-            
-            is_equal = np.array_equal(col_row, next_col_row)
-            if is_equal:
-                reflection_count += 1
-            else:
-                return reflection_count
-            
-            index_offset_left -= 1
-            index_offset_right += 1
-        except IndexError:
-            return reflection_count
+    last_index = size - 1
 
-def get_best_reflection_index(pattern):
-    best_column_reflection = {"index": 0, "count": 0}
-    best_row_reflection = {"index": 0, "count": 0}
-    
+    while True:
+        if (index + index_offset_left) < 0 or (index + index_offset_right) > last_index:
+            return True
+        
+        col_row = pattern[index + index_offset_left, :] if axis == "row" else pattern[:, index + index_offset_left]
+        next_col_row = pattern[index + index_offset_right, :] if axis == "row" else pattern[:, index + index_offset_right]
+        
+        is_equal = np.array_equal(col_row, next_col_row)
+        
+        if not is_equal:
+            return False
+        
+        index_offset_left -= 1
+        index_offset_right += 1
+
+def get_reflection_index(pattern):
     # test column reflections
-    for index in range(pattern.shape[1] - 1):
+    col_size = pattern.shape[1]
+    for index in range(col_size - 1):
         equal_columns = np.array_equal(pattern[:, index], pattern[:, index + 1])
         
-        if equal_columns:
-            reflections_count = count_reflections(pattern, index, "column")
-            if reflections_count > best_column_reflection["count"]:
-                best_column_reflection["count"] = reflections_count
-                best_column_reflection["index"] = index
+        if equal_columns and check_is_reflection(pattern, index, col_size, "column"):
+            return { "index": index, "type": "column"}
     
     # test row reflections
-    for index in range(pattern.shape[0] - 1):
+    row_size = pattern.shape[0]
+    for index in range(row_size - 1):
         equal_row = np.array_equal(pattern[index, :], pattern[index + 1, :])
         
-        if equal_row:
-            reflections_count = count_reflections(pattern, index, "row")
-            
-            if reflections_count > best_row_reflection["count"]:
-                best_row_reflection["count"] = reflections_count
-                best_row_reflection["index"] = index
+        if equal_row and check_is_reflection(pattern, index, row_size, "row"):
+            return { "index": index, "type": "row"}
 
-    if best_column_reflection["count"] > best_row_reflection["count"]:
-        return { "index": best_column_reflection["index"], "type": "column"}
-    return { "index": best_row_reflection["index"], "type": "row"}
+    raise ValueError("no reflections")
 
 def calculate_pattern_value(pattern):
-    best_reflection = get_best_reflection_index(pattern)
+    reflection = get_reflection_index(pattern)
     
-    if best_reflection["type"] == "row":
-        return (best_reflection["index"] + 1) * 100
-    return best_reflection["index"] + 1
+    if reflection["type"] == "row":
+        return (reflection["index"] + 1) * 100
+    return reflection["index"] + 1
     
 def main():
     total = 0
 
-    # with open("../input.txt") as f:
-    with open("../input_example.txt") as f:
+    with open("../input.txt") as f:
+    # with open("../input_example.txt") as f:
         pattern = None
         for line in f:
             if line == "\n":
@@ -72,7 +59,7 @@ def main():
             else:
                 line_mapped = [0 if sing == "." else 1 for sing in line.strip()]
                 if pattern is None:
-                    pattern = np.empty((0, len(line_mapped)))
+                    pattern = np.empty((0, len(line_mapped)), dtype=np.int8)
                 pattern = np.append(pattern, [line_mapped], axis=0)
         total += calculate_pattern_value(pattern)
     return total
