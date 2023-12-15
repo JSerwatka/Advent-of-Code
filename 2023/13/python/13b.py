@@ -8,7 +8,7 @@ def check_is_reflection(pattern, index, size, axis, is_smudge_cleaned):
 
     while True:
         if (index + index_offset_left) < 0 or (index + index_offset_right) > last_index:
-            return True
+            return (True, is_smudge_cleaned)
         
         col_row = pattern[index + index_offset_left, :] if axis == "row" else pattern[:, index + index_offset_left]
         next_col_row = pattern[index + index_offset_right, :] if axis == "row" else pattern[:, index + index_offset_right]
@@ -16,7 +16,7 @@ def check_is_reflection(pattern, index, size, axis, is_smudge_cleaned):
         is_equal, is_smudge_cleaned = check_equality(col_row, next_col_row, is_smudge_cleaned)
         
         if not is_equal:
-            return False
+            return (False, is_smudge_cleaned)
         
         index_offset_left -= 1
         index_offset_right += 1
@@ -38,8 +38,9 @@ def get_reflection_index(pattern):
         next_col = pattern[:, index + 1]
         
         is_equal, is_smudge_cleaned = check_equality(col, next_col, False)
+        is_reflection, is_smudge_cleaned = check_is_reflection(pattern, index, col_size, "column", is_smudge_cleaned)
         
-        if is_equal and check_is_reflection(pattern, index, col_size, "column", is_smudge_cleaned):
+        if is_equal and is_reflection and is_smudge_cleaned:
             return { "index": index, "type": "column"}
     
     # test row reflections
@@ -50,8 +51,9 @@ def get_reflection_index(pattern):
         next_row = pattern[index + 1, :]
         
         is_equal, is_smudge_cleaned = check_equality(row, next_row, False)
+        is_reflection, is_smudge_cleaned = check_is_reflection(pattern, index, row_size, "row", is_smudge_cleaned)
         
-        if is_equal and check_is_reflection(pattern, index, row_size, "row", is_smudge_cleaned):
+        if is_equal and is_reflection and is_smudge_cleaned:
             return { "index": index, "type": "row"}
 
     raise ValueError("no reflections")
@@ -66,8 +68,8 @@ def calculate_pattern_value(pattern):
 def main():
     total = 0
 
-    # with open("../input.txt") as f:
-    with open("../input_example.txt") as f:
+    with open("../input.txt") as f:
+    # with open("../input_example.txt") as f:
         pattern = None
         for line in f:
             if line == "\n":
