@@ -60,22 +60,47 @@ def tilt(platform, platform_len, tilt_direction):
     
     return platform_tilted
 
-def main(number_of_cycles):
+def get_load(platform, platform_len):
     total = 0
+    rounded_rocks_by_row = Counter(np.where(platform == b"O")[0])
+
+    for row_index, rounded_rocks_count in rounded_rocks_by_row.items():
+        total += (platform_len - row_index) * rounded_rocks_count
+    return total 
+
+def main(target_cycles):
+    cycle_hash = {}
+    last_cycles_repeat = None
+    cycle_repeat = None
     with open("../input.txt") as f:
     # with open("../input_example.txt") as f:
         platform = np.array([list(line.strip()) for line in f], dtype="S1")
         # I know that column and row lengths are the same
         platform_len = platform.shape[0]
-        for _ in range(number_of_cycles):
+        for cycle in range(target_cycles):
             for tilt_direction in ["north", "west", "south", "east"]:
                 platform = tilt(platform, platform_len, tilt_direction)
+            platform_hash = hash(platform.tobytes())
+            load = get_load(platform, platform_len)
+            
+            # start of cycle
+            if platform_hash in cycle_hash:
+                if last_cycles_repeat:
+                    cycle_repeat = (cycle + 1) - last_cycles_repeat
+                    break
+                cycle_hash = {}
+                last_cycles_repeat = cycle + 1
+            
+            cycle_hash[platform_hash] = {
+                "cycle": cycle + 1,
+                "load": load
+            }
         
-        rounded_rocks_by_row = Counter(np.where(platform == b"O")[0])
-        
-        for row_index, rounded_rocks_count in rounded_rocks_by_row.items():
-            total += (platform_len - row_index) * rounded_rocks_count
-
-    return total
+        # find which cycle value will be at "target_cycles"
+        for _, value in cycle_hash.items():
+            if (target_cycles - value.get('cycle')) %  cycle_repeat == 0:
+                return value.get("load") 
 
 print(main(1_000_000_000))
+
+
