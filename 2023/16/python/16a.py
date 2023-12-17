@@ -1,8 +1,8 @@
 import numpy as np
 
-beams = {}
+beams = []
 energized_places = set()
-
+beam_hashes = set()
 class Beam:
     directions = {
         "top": (0, -1),
@@ -19,22 +19,12 @@ class Beam:
         cls.boundary = boundary
     
     def __init__(self, x, y, direction):
-        # to prevent beams we already now route of
-        self.beam_hash = f"{x}_{y}_{direction}"
-        if self.beam_hash in beams:
-            return
-
         self.x = x
         self.y = y
         self.direction = direction
         self.dead = False
-
-        if self._is_in_boundaries():
-            self._energize()
-            beams[self.beam_hash] = self
-            self._test_position()
-        else:
-            self.dead = True
+        
+        self.step(True)
 
     def __repr__(self):
         return self.beam_hash
@@ -45,9 +35,9 @@ class Beam:
     def _energize(self):
         if (Beam.debug):
             Beam.space_result[self.y][self.x] = b"#"
-        energized_places.add(self.x * 10 + self.y)
+        energized_places.add(f"{self.x}_{self.y}")
 
-    def _test_position(self):
+    def _test_position_change(self):
         match (self.direction, Beam.space[self.y][self.x]):
             case ("top", b"/"):
                 self.direction = "right"
@@ -78,25 +68,34 @@ class Beam:
                 Beam(self.x + dx_right, self.y + dy_right, "right")
                 self.dead = True
 
-    def step(self):
-        dx, dy = Beam.directions[self.direction]
-        self.x += dx
-        self.y += dy
+    def step(self, is_initial = False):
+        if not is_initial:
+            dx, dy = Beam.directions[self.direction]
+            self.x += dx
+            self.y += dy
         
-        if self._is_in_boundaries():
-            self._energize()
-            self._test_position()
-        else:
+        beam_hash = f"{self.x}_{self.y}_{self.direction}"
+        
+        been_there = beam_hash in beam_hashes
+        if been_there or not self._is_in_boundaries():
             self.dead = True
+            return
+        
+        self._energize()
+        if is_initial:
+            beams.append(self)
+        beam_hashes.add(beam_hash)
+        self._test_position_change()
+
 
 def main():
-    # with open("../input.txt") as f:
-    with open("../input_example.txt") as f:
+    with open("../input.txt") as f:
+    # with open("../input_example.txt") as f:
         space = np.array([list(line.strip()) for line in f], dtype="S1")
         Beam.set_space_and_boundary(space, space.shape[0])
         Beam(0, 0, "right")
         while beams:
-                _, beam = beams.popitem()
+                beam = beams.pop()
                 while not beam.dead:
                     beam.step()
                     pass
