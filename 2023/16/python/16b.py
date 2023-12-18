@@ -19,9 +19,6 @@ class Beam:
         self.dead = False
         
         self.step(True)
-
-    def __repr__(self):
-        return self.beam_hash
     
     @classmethod
     def set_space_and_boundary(cls, space, boundary):
@@ -89,8 +86,8 @@ class Beam:
 
 
 def main():
-    # with open("../input.txt") as f:
-    with open("../input_example.txt") as f:
+    with open("../input.txt") as f:
+    # with open("../input_example.txt") as f:
         space = np.array([list(line.strip()) for line in f], dtype="S1")
         Beam.set_space_and_boundary(space, space.shape[0])
         energized_paths_by_start_point = []
