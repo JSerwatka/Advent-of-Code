@@ -89,8 +89,8 @@ class Beam:
 
 
 def main():
-    with open("../input.txt") as f:
-    # with open("../input_example.txt") as f:
+    # with open("../input.txt") as f:
+    with open("../input_example.txt") as f:
         space = np.array([list(line.strip()) for line in f], dtype="S1")
         Beam.set_space_and_boundary(space, space.shape[0])
         energized_paths_by_start_point = []
@@ -99,57 +99,30 @@ def main():
         global energized_places
         global beam_hashes
         
-        # top
-        for i in range(0, space_len):
-            beams=[]
-            energized_places=set()
-            beam_hashes=set()
-            Beam(i, 0, "bottom")
-            while beams:
-                beam = beams.pop()
-                while not beam.dead:
-                    beam.step()
-                    pass
-            energized_paths_by_start_point.append(len(energized_places))
-        # right
-        for i in range(0, space_len):
-            beams=[]
-            energized_places=set()
-            beam_hashes=set()
-            Beam(space_len-1, i , "left")
-            while beams:
-                beam = beams.pop()
-                while not beam.dead:
-                    beam.step()
-                    pass
-            energized_paths_by_start_point.append(len(energized_places))
-        # bottom
-        for i in range(0, space_len):
-            beams=[]
-            energized_places=set()
-            beam_hashes=set()
-            Beam(i, space_len-1, "top")
-            while beams:
-                beam = beams.pop()
-                while not beam.dead:
-                    beam.step()
-                    pass
-            energized_paths_by_start_point.append(len(energized_places))
-        # left
-        for i in range(0, space_len):
-            beams=[]
-            energized_places=set()
-            beam_hashes=set()
-            Beam(0, i, "right")
-            while beams:
-                beam = beams.pop()
-                while not beam.dead:
-                    beam.step()
-                    pass
-            energized_paths_by_start_point.append(len(energized_places))
+        
+        for start_direction in ["bottom", "left", "top", "right"]:
+            for i in range(0, space_len):
+                beams=[]
+                energized_places=set()
+                beam_hashes=set()
 
-
-            
+                match start_direction:
+                    case "bottom":
+                        Beam(i, 0, "bottom")
+                    case "left":
+                        Beam(space_len-1, i , "left")
+                    case "top":
+                        Beam(i, space_len-1, "top")
+                    case "right":
+                        Beam(0, i, "right")
+                        
+                while beams:
+                    beam = beams.pop()
+                    while not beam.dead:
+                        beam.step()
+                        pass
+                energized_paths_by_start_point.append(len(energized_places))
+           
         return max(energized_paths_by_start_point)
 
                 
