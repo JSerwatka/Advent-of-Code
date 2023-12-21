@@ -8,8 +8,8 @@ def dfs(graph, start_node, end_node):
     stack = [(start_node, [start_node], [], [])]
     while stack:
         (node, path, conditions_path, negative_conditions_path) = stack.pop()
-        for index, (next_node, condition) in enumerate(graph[node].items()):
-            negative_conditions = list(graph[node].values())[:index]
+        for index, (next_node, condition) in enumerate(graph[node]):
+            negative_conditions = [x[1] for x in graph[node][:index]]
             # prevent circular
             if next_node not in path:
                 if next_node == end_node:
@@ -29,9 +29,9 @@ def process_workflows(workflow, graph):
     for step in workflow_steps_splited:
         step_splited = step.split(":")
         if len(step_splited) == 1:
-            graph[workflow_name][step_splited[0]] = True
+            graph[workflow_name].append([step_splited[0], True])
         else:
-            graph[workflow_name][step_splited[1]] = step_splited[0]
+            graph[workflow_name].append([step_splited[1], step_splited[0]])
     return graph
 
 def get_combinations_from_condition(conditions, negative_conditions):
@@ -39,30 +39,28 @@ def get_combinations_from_condition(conditions, negative_conditions):
     for letter in ["x", "m", "a", "s"]:
         combinations_per_letter[letter] = [0, 4001]
     
-    for condition in conditions:
+    is_negative = False
+    
+    for condition in [*conditions, "NEGATIVE_START", *negative_conditions]:
         if condition is True:
             continue
+        if condition == "NEGATIVE_START":
+            is_negative = True
+            continue
+        
         letter, sign, value = condition[0], condition[1], condition[2: ]
         new_value = int(value)
+        
+        if is_negative:
+            sign = ">" if sign == "<" else "<"
+        
         if sign == ">":
             current_value = combinations_per_letter[letter][0]
             combinations_per_letter[letter][0] = new_value if new_value > current_value else current_value
         else:
             current_value = combinations_per_letter[letter][1]
             combinations_per_letter[letter][1] = new_value if new_value < current_value else current_value
-            
-    for condition in negative_conditions:
-        if condition is True:
-            continue
-        letter, sign, value = condition[0], condition[1], condition[2: ]
-        sign = ">" if sign == "<" else "<"
-        new_value = int(value)
-        if sign == ">":
-            current_value = combinations_per_letter[letter][0]
-            combinations_per_letter[letter][0] = new_value if new_value > current_value else current_value
-        else:
-            current_value = combinations_per_letter[letter][1]
-            combinations_per_letter[letter][1] = new_value if new_value < current_value else current_value
+
     print(combinations_per_letter)
     print("==============")
     
@@ -74,8 +72,8 @@ def get_combinations_from_condition(conditions, negative_conditions):
         
 
 def main():
-    graph = defaultdict(dict)
-    graph["A"], graph["R"] = {}, {}
+    graph = defaultdict(list)
+    graph["A"], graph["R"] = [],[]
     total = 0
     # with open("../input.txt") as f:
     with open("../input_example.txt") as f:
@@ -83,7 +81,8 @@ def main():
             if line == "\n":
                 break
             graph = process_workflows(line.strip(), graph)
-
+        pprint(graph)
+        print("====================")
     for path in dfs(graph, "in", "A"):
         print(path["path"])
         print(path["conditions"])
