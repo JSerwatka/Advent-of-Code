@@ -1,8 +1,6 @@
 
 from collections import defaultdict
 import re
-from pprint import pprint
-
 
 def dfs(graph, start_node, end_node):
     stack = [(start_node, [start_node], [], [])]
@@ -35,8 +33,6 @@ def get_combinations_from_condition(conditions, negative_conditions):
     combinations_per_letter = {}
     for letter in ["x", "m", "a", "s"]:
         combinations_per_letter[letter] = [0, 4001]
-    
-    is_negative = False
     
     for condition in conditions:
         if condition is True:
@@ -87,37 +83,9 @@ def main():
             if line == "\n":
                 break
             graph = process_workflows(line.strip(), graph)
-        # pprint(graph)
-        # print("====================")
     for path in dfs(graph, "in", "A"):
-        # print(path["path"])
-        # print(path["conditions"])
-        # print(path["negative_conditions"])
         total_by_condition = get_combinations_from_condition(path["conditions"], path["negative_conditions"])
         total += total_by_condition
     return total
 
 print(main())
-
-
-    # is_negative = False
-    
-    # for condition in [*conditions, "NEGATIVE_START", *negative_conditions]:
-    #     if condition is True:
-    #         continue
-    #     if condition == "NEGATIVE_START":
-    #         is_negative = True
-    #         continue
-        
-    #     letter, sign, value = condition[0], condition[1], condition[2: ]
-    #     new_value = int(value)
-        
-    #     if is_negative:
-    #         sign = ">" if sign == "<" else "<"
-        
-    #     if sign == ">":
-    #         current_value = combinations_per_letter[letter][0]
-    #         combinations_per_letter[letter][0] = new_value if new_value > current_value else current_value
-    #     else:
-    #         current_value = combinations_per_letter[letter][1]
-    #         combinations_per_letter[letter][1] = new_value if new_value < current_value else current_value
